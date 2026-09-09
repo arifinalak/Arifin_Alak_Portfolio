@@ -387,11 +387,223 @@ nav a:hover {
     100% { transform: translateX(0); }
 }
 
+/* ── About Home Section ───────────────────────── */
+.about-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 100px 6%;
+    align-items: start;
+    background: #0a0f1e;
+}
+
+/* LEFT */
+.about-home-badge {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e2e8f0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.about-home-heading {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0 0 32px;
+}
+
+.about-home-year {
+    color: #7b2ff7;
+}
+
+.about-home-bottom {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px 18px;
+    flex-shrink: 0;
+}
+
+.about-stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    min-width: 48px;
+}
+
+.stat-label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.about-home-photo {
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 50%, #1e1b4b 100%);
+    border: 1px solid rgba(123,47,247,0.3);
+    aspect-ratio: 3/4;
+    max-height: 280px;
+}
+
+.about-home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+/* RIGHT */
+.about-home-right {
+    padding-top: 12px;
+}
+
+.about-home-bio {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.about-home-bio a {
+    color: #a855f7;
+    text-decoration: none;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.about-feature-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 16px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.about-feature-card:hover {
+    border-color: rgba(123,47,247,0.4);
+    background: rgba(123,47,247,0.05);
+}
+
+.feature-tag {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #64748b;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.about-feature-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px;
+}
+
+.about-feature-card p {
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-home-cta {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-cta-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-cta-outline:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.6);
+}
+
+.about-cta-solid {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #7b2ff7;
+    border-radius: 999px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-cta-solid:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123,47,247,0.4);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about-home {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 5%;
+    }
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+
 .about-hero {
     position: relative;
     min-height: 58vh;
     display: flex;
     align-items: center;
+
     justify-content: center;
     text-align: center;
     padding: 160px 10% 90px;
