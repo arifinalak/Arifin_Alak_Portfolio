@@ -920,6 +920,132 @@ nav a:hover {
     .fp-card { flex: 0 0 300px; }
 }
 
+/* ── Research & Ideas Section ───────────────────── */
+.research-section {
+    padding: 100px 6%;
+    background: #0a0f1e;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.research-sidebar {
+    padding-top: 24px;
+}
+
+.research-badge {
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.research-content-box {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 24px;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle glow behind the box */
+.research-content-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(123,47,247,0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.research-top-label {
+    position: relative;
+    z-index: 1;
+    color: #a855f7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.research-heading {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    margin: 0 0 24px 0;
+    max-width: 800px;
+}
+
+.research-paragraph {
+    position: relative;
+    z-index: 1;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 0 40px 0;
+    max-width: 600px;
+}
+
+.research-link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.research-link:hover {
+    color: #a855f7;
+    border-color: #a855f7;
+}
+
+.research-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.research-link:hover i {
+    transform: rotate(0deg) !important;
+}
+
+@media (max-width: 900px) {
+    .research-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .research-sidebar {
+        padding-top: 0;
+    }
+    
+    .research-content-box {
+        padding: 40px 24px;
+    }
+}
+
 /* ── Services Section ───────────────────────────── */
 .services-section {
     padding: 100px 6%;
