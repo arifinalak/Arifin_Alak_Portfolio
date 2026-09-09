@@ -23,7 +23,7 @@ body {
 }
 
 body.about-page-bg {
-    background: url("potfolio pic/Purple Rain.jpg") center center / cover no-repeat fixed;
+    background: url("potfolio pic/ChatGPT Image Feb 16, 2026, 02_41_27 AM.png") center center / cover no-repeat fixed;
     font-size: 1.06rem;
 }
 
@@ -1510,7 +1510,7 @@ nav a:hover {
     text-align: center;
     padding: 160px 10% 90px;
     border-bottom: 1px solid #1e293b;
-    background: url("potfolio pic/Purple Rain.jpg") center center / cover no-repeat;
+    background: url("potfolio pic/ChatGPT Image Feb 16, 2026, 02_41_27 AM.png") center center / cover no-repeat;
 }
 
 .about-hero::before {
@@ -1622,7 +1622,7 @@ body.about-page-bg .contact-info a {
     right: 0;
     bottom: 0;
     height: 180px;
-    background: url("potfolio pic/Purple Rain.jpg") center 72% / cover no-repeat;
+    background: url("potfolio pic/ChatGPT Image Feb 16, 2026, 02_41_27 AM.png") center 72% / cover no-repeat;
     opacity: 0.95;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
