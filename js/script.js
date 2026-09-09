@@ -23,3 +23,38 @@ if (hamburger && mainNav) {
         });
     });
 }
+
+// Typewriter effect
+const typewriterEl = document.getElementById("typewriter");
+if (typewriterEl) {
+    const words = ["Web Developer", "AI Enthusiast", "Problem Solver", "Backend Engineer", "Creative Designer"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const current = words[wordIndex];
+        if (isDeleting) {
+            typewriterEl.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typewriterEl.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let delay = isDeleting ? 60 : 100;
+
+        if (!isDeleting && charIndex === current.length) {
+            delay = 1800;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            delay = 400;
+        }
+
+        setTimeout(type, delay);
+    }
+
+    type();
+}
