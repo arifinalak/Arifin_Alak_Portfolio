@@ -1334,6 +1334,95 @@ footer {
     }
 }
 
+/* ── Hamburger Button ─────────────────────────── */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile-only hire button inside dropdown */
+.mobile-hire-btn { display: none; }
+
+/* ── Mobile Nav ───────────────────────────────── */
+@media (max-width: 768px) {
+
+    .hamburger { display: flex; }
+
+    .nav-right { display: none; }
+
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 15, 30, 0.98);
+        backdrop-filter: blur(16px);
+        padding: 16px 0 24px;
+        border-top: 1px solid rgba(123, 92, 255, 0.2);
+        z-index: 999;
+    }
+
+    .nav-center.open { display: flex; }
+
+    .nav-center a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .nav-center a::after { display: none; }
+
+    .mobile-hire-btn {
+        display: flex !important;
+        margin-top: 12px;
+        border: none;
+        background: #ffffff;
+        color: #0f172a;
+        border-radius: 999px;
+        padding: 12px 32px;
+        font-weight: 700;
+        width: auto;
+    }
+
+    .nav-logo {
+        height: 65px;
+    }
+
+    .nav-container {
+        min-height: 75px;
+        padding: 0 4%;
+    }
+}
+
 
 @keyframes glow {
     from { text-shadow: 0 0 12px rgba(123, 92, 255, 0.5); }
