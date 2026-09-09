@@ -58,3 +58,32 @@ if (typewriterEl) {
 
     type();
 }
+
+// Marquee scroll-direction reversal
+(function () {
+    const inners = document.querySelectorAll('.marquee-inner');
+    if (!inners.length) return;
+
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const currentY = window.scrollY;
+                const goingDown = currentY > lastY;
+                lastY = currentY;
+
+                inners.forEach(el => {
+                    if (goingDown) {
+                        el.classList.add('scrolled-down');
+                    } else {
+                        el.classList.remove('scrolled-down');
+                    }
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
