@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,95 +10,116 @@
 
 <body>
 
-<header>
-    <div class="nav-container">
-        <div class="nav-left">
-            <a href="index.html" class="logo-link">
-                <img src="potfolio pic/logo.png" alt="Arifin Alak Logo" class="nav-logo">
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <img src="potfolio pic/logo.png" alt="Arifin Alak Logo" class="nav-logo">
+                </a>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="#routine">Routine</a>
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <img class="profile-pic" src="potfolio pic/ChatGPT Image Feb 16, 2026, 02_41_27 AM.png" alt="Portfolio photo">
+
+        <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Open for New Projects
+        </div>
+
+        <h1 class="hero-heading">Meet <span class="hero-name"> Arifin</span> Alak</h1>
+
+        <p class="hero-subtitle">A Passionate <span class="hero-typewriter" id="typewriter"></span></p>
+
+        <p class="hero-desc">I build responsive, performance-driven websites and enjoy<br>turning ideas into elegant,
+            functional code.</p>
+
+        <div class="hero-cta">
+            <a href="projects.html" class="hero-btn-primary">View Projects <span>→</span></a>
+            <a href="about.html" class="hero-btn-secondary">
+                My Story
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
             </a>
         </div>
-        <nav class="nav-center" id="main-nav">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#services">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="#routine">Routine</a>
-            <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Hire Me
-            </a>
-        </nav>
-        <div class="nav-right">
-            <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Hire Me
-            </a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+    </section>
 
-<section class="hero" id="home">
-    <img class="profile-pic" src="potfolio pic/ChatGPT Image Feb 16, 2026, 02_41_27 AM.png" alt="Portfolio photo">
+    <section class="about" id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I am passionate about Artificial Intelligence and Web Development.
 
-    <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Open for New Projects
-    </div>
+                    I am a Software Developer passionate about building smart, clean, and useful digital solutions.
+                    Currently studying at <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>, I
+                    focus on combining strong back-end logic with creative design thinking.
+                </p>
 
-    <h1 class="hero-heading">Meet <span class="hero-name">Sayed Arifin</span> Ahmed Alak</h1>
+                <p>I mainly work with Python & Flask, building fast and structured APIs. When performance matters, I
+                    switch to C / C++ for speed and efficiency. On the front end, I use HTML & CSS to create clean,
+                    user-friendly interfaces. I also work with MySQL & MariaDB, making sure data is organized,
+                    optimized, and easy to manage.</p>
 
-    <p class="hero-subtitle">A Passionate <span class="hero-typewriter" id="typewriter"></span></p>
+                <p>Beyond coding, I specialize in AI prompt design—turning complex questions into clear, meaningful
+                    results. Graphic design is my creative space, helping me build apps that are not only functional but
+                    also visually engaging.</p>
 
-    <p class="hero-desc">I build responsive, performance-driven websites and enjoy<br>turning ideas into elegant, functional code.</p>
-
-    <div class="hero-cta">
-        <a href="projects.html" class="hero-btn-primary">View Projects <span>→</span></a>
-        <a href="about.html" class="hero-btn-secondary">
-            My Story
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        </a>
-    </div>
-</section>
-
-<section class="about" id="about">
-    <h2>About</h2>
-    <div class="about-content">
-        <div class="about-text">
-            <p> 
-                I am passionate about Artificial Intelligence and Web Development.
-
-                I am a Software Developer passionate about building smart, clean, and useful digital solutions. Currently studying at <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>, I focus on combining strong back-end logic with creative design thinking.
-            </p>
-
-            <p>I mainly work with Python & Flask, building fast and structured APIs. When performance matters, I switch to C / C++ for speed and efficiency. On the front end, I use HTML & CSS to create clean, user-friendly interfaces. I also work with MySQL & MariaDB, making sure data is organized, optimized, and easy to manage.</p>
-
-            <p>Beyond coding, I specialize in AI prompt design—turning complex questions into clear, meaningful results. Graphic design is my creative space, helping me build apps that are not only functional but also visually engaging.</p>
-
-            <!-- <p>
+                <!-- <p>
                 Join our 
                 <a href="https://discord.com/" target="https://discord.gg/">CSE 391 Discord</a> 
                 community.
             </p> -->
 
-            <p style="color: #b794f4; font-weight: 600; border-bottom: 1px dashed var(--accent-1); padding-bottom: 5px;">
-    <i>"Precision. Performance. Progress"</i>
-</p>
+                <p
+                    style="color: #b794f4; font-weight: 600; border-bottom: 1px dashed var(--accent-1); padding-bottom: 5px;">
+                    <i>"Precision. Performance. Progress"</i>
+                </p>
 
-            <a href="about.html" class="get-in-touch">Learn More <span class="arrow">→</span></a>
+                <a href="about.html" class="get-in-touch">Learn More <span class="arrow">→</span></a>
+            </div>
+            <div class="about-image">
+                <img src="potfolio pic/about_me_pic.png" alt="About me">
+            </div>
         </div>
-        <div class="about-image">
-            <img src="potfolio pic/about_me_pic.png" alt="About me">
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- <section id="hobbies">
+    <!-- <section id="hobbies">
     <h2>Hobbies & Interests</h2>
     
     <div class="hobbies-main">
@@ -156,218 +178,236 @@
     </div>
 </section> -->
 
-<section id="skills">
-    <h2>Skills</h2>
+    <section id="skills">
+        <h2>Skills</h2>
 
-    <div class="skill">
-        <div class="skill-name">HTML</div>
-        <div class="skill-bar"><div class="skill-fill html"></div></div>
-    </div>
-
-    <div class="skill">
-        <div class="skill-name">CSS</div>
-        <div class="skill-bar"><div class="skill-fill css"></div></div>
-    </div>
-
-    <div class="skill">
-        <div class="skill-name">Python</div>
-        <div class="skill-bar"><div class="skill-fill python-95"></div></div>
-    </div>
-
-    <div class="skill">
-        <div class="skill-name">C</div>
-        <div class="skill-bar"><div class="skill-fill c"></div></div>
-    </div>
-
-    <div class="skill">
-        <div class="skill-name">C++</div>
-        <div class="skill-bar"><div class="skill-fill cpp"></div></div>
-    </div>
-
-</section>
-
-<section id="services">
-    <h2>Services</h2>
-
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="service-icon"></div>
-            <h3>Web Design</h3>
-            <p>Custom, responsive web designs that reflect your brand identity.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"></div>
-            <h3>Web Development</h3>
-            <p>Full-stack web development using modern technologies and best practices.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"></div>
-            <h3>Backend Development</h3>
-            <p>Robust APIs and server-side solutions with Python, Flask, and databases.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"></div>
-            <h3>Bug Fixing & Optimization</h3>
-            <p>Fix layout issues, improve performance, and ensure mobile responsiveness.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"></div>
-            <h3>AI & Data Solutions</h3>
-            <p>Custom AI implementations and data analysis for intelligent applications.</p>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <h3>E-commarce Website</h3>
-            <p>An e-commerce website named <a href="https://mazzybd.com/" target="https://mazzybd.com/">MAZZY</a>. An online clothing brand. </p>
-
-        </div>
-
-        <div class="card">
-            <h3>AI Diagnosis System</h3>
-            <p>This is my upcoming project for my university thesis.</p>
-        </div>
-
-        <div class="card">
-            <h3>AI Video Translator</h3>
-            <p>Automated system that translates audio into different language content.</p>
-        </div>
-
-    </div>
-    <div class="view-all">
-        <a href="projects.html" class="view-all-link">View All Projects →</a>
-    </div>
-</section>
-
-
-<section id="routine">
-    <h2>University Routine & Course Schedule</h2>
-    <p class="routine-subtitle">Spring 2026 Semester</p>
-
-    <div class="routine-wrapper">
-        <table class="routine-table">
-            <thead>
-                <tr>
-                    <th>Time/Day</th>
-                    <th>Sunday</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>8:00 AM - 9:20 AM</td>
-                    <td></td>
-                    <td colspan="2">CSE340-21-FARS-09B-12C<br><small>Section 09B | Room: 12C</small></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9:30 AM - 10:50 AM</td>
-                    <td></td>
-                    <td>CSE470-12-SADA-09A-02C<br><small>with Sada</small></td>
-                    <td></td>
-                    <td>CSE470-12-SADA-09A-02C<br><small>with Sada</small></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11:00 AM - 12:20 PM</td>
-                    <td rowspan="2">CSE391-01-ADR-FT11-04L<br><small>Lecture + Lab</small></td>
-                    <td>CSE423-12-ZLNM-09A-04C</td>
-                    <td></td>
-                    <td>CSE423-12-ZLNM-09A-04C</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12:30 PM - 1:50 PM</td>
-                    <td colspan="3" style="text-align: center;">Study / Break Time</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2:00 PM - 4:50 PM</td>
-                    <td>CSE423L-12-TBA-09F-25L<br><small>Lab Session</small></td>
-                    <td></td>
-                    <td>CSE391L-01-TBA-09E-22L<br><small>Lab Session</small></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Sayed Arifin Ahmed Alak</h3>
-            <p class="tagline">Code Meets Creativity.</p>
-            <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic design to build identities that stand out. Every pixel has a purpose.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
-                <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">⚙</a>
-                <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LeetCode">◇</a>
-                <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">X</a>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-fill html"></div>
             </div>
         </div>
-        
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-                <li><a href="projects.html">My Works</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <!-- <li><a href="#hobbies">Hobbies</a></li> -->
-                
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Services</h4>
-            <ul class="footer-links">
-                <li><a href="#services">Web Design</a></li>
-                <li><a href="#services">Web Development</a></li>
-                <li><a href="#services">Backend Development</a></li>
-                <li><a href="#services">Bug Fixing</a></li>
-                <li><a href="#services">AI & Data Solutions</a></li>
-                <li><a href="#services">SEO Optimization</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <ul class="contact-info">
-                <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
-                <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
-                <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor" class="get-in-touch">Get in Touch <span class="arrow">→</span></a>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>© 2026 Arifin Alak. All rights reserved.</p>
 
-        <p id="page-meta"></p>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-fill css"></div>
+            </div>
+        </div>
 
-    </div>
-</footer>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-fill python-95"></div>
+            </div>
+        </div>
 
-<script src="js/script.js"></script>
+        <div class="skill">
+            <div class="skill-name">C</div>
+            <div class="skill-bar">
+                <div class="skill-fill c"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">C++</div>
+            <div class="skill-bar">
+                <div class="skill-fill cpp"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Web Design</h3>
+                <p>Custom, responsive web designs that reflect your brand identity.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Web Development</h3>
+                <p>Full-stack web development using modern technologies and best practices.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Backend Development</h3>
+                <p>Robust APIs and server-side solutions with Python, Flask, and databases.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Bug Fixing & Optimization</h3>
+                <p>Fix layout issues, improve performance, and ensure mobile responsiveness.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>AI & Data Solutions</h3>
+                <p>Custom AI implementations and data analysis for intelligent applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>E-commarce Website</h3>
+                <p>An e-commerce website named <a href="https://mazzybd.com/" target="https://mazzybd.com/">MAZZY</a>.
+                    An online clothing brand. </p>
+
+            </div>
+
+            <div class="card">
+                <h3>AI Diagnosis System</h3>
+                <p>This is my upcoming project for my university thesis.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Video Translator</h3>
+                <p>Automated system that translates audio into different language content.</p>
+            </div>
+
+        </div>
+        <div class="view-all">
+            <a href="projects.html" class="view-all-link">View All Projects →</a>
+        </div>
+    </section>
+
+
+    <section id="routine">
+        <h2>University Routine & Course Schedule</h2>
+        <p class="routine-subtitle">Spring 2026 Semester</p>
+
+        <div class="routine-wrapper">
+            <table class="routine-table">
+                <thead>
+                    <tr>
+                        <th>Time/Day</th>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 AM - 9:20 AM</td>
+                        <td></td>
+                        <td colspan="2">CSE340-21-FARS-09B-12C<br><small>Section 09B | Room: 12C</small></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9:30 AM - 10:50 AM</td>
+                        <td></td>
+                        <td>CSE470-12-SADA-09A-02C<br><small>with Sada</small></td>
+                        <td></td>
+                        <td>CSE470-12-SADA-09A-02C<br><small>with Sada</small></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 12:20 PM</td>
+                        <td rowspan="2">CSE391-01-ADR-FT11-04L<br><small>Lecture + Lab</small></td>
+                        <td>CSE423-12-ZLNM-09A-04C</td>
+                        <td></td>
+                        <td>CSE423-12-ZLNM-09A-04C</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM - 1:50 PM</td>
+                        <td colspan="3" style="text-align: center;">Study / Break Time</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM - 4:50 PM</td>
+                        <td>CSE423L-12-TBA-09F-25L<br><small>Lab Session</small></td>
+                        <td></td>
+                        <td>CSE391L-01-TBA-09E-22L<br><small>Lab Session</small></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayed Arifin Ahmed Alak</h3>
+                <p class="tagline">Code Meets Creativity.</p>
+                <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic
+                    design to build identities that stand out. Every pixel has a purpose.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank"
+                        rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
+                    <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="GitHub">⚙</a>
+                    <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="LeetCode">◇</a>
+                    <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon"
+                        title="X (Twitter)">X</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="projects.html">My Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#hobbies">Hobbies</a></li> -->
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Web Design</a></li>
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">Backend Development</a></li>
+                    <li><a href="#services">Bug Fixing</a></li>
+                    <li><a href="#services">AI & Data Solutions</a></li>
+                    <li><a href="#services">SEO Optimization</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
+                    <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
+                    <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor"
+                    class="get-in-touch">Get in Touch <span class="arrow">→</span></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Arifin Alak. All rights reserved.</p>
+
+            <p id="page-meta"></p>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
