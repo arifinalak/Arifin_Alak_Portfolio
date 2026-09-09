@@ -77,13 +77,37 @@ header {
 }
 
 .nav-logo {
-    height: 70px;
+    height: 50px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
 .nav-logo:hover {
     transform: scale(1.05);
+}
+
+.nav-brand-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 2px;
+}
+
+.nav-brand-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+.nav-brand-tagline {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .nav-center {
