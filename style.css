@@ -45,13 +45,42 @@ header {
     z-index: 1000;
     background: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(10px);
-    text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     color: var(--accent-1);
-    margin: 0 20px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
