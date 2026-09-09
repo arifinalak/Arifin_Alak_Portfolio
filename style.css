@@ -43,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     padding: 0;
 }
