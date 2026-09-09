@@ -77,13 +77,14 @@ header {
 }
 
 .nav-logo {
-    height: 50px;
+    height: 55px;
     width: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .nav-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 8px rgba(123, 92, 255, 0.5));
 }
 
 .nav-brand-text {
