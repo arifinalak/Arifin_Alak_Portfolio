@@ -52,9 +52,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    flex: 1;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
 }
 
 .logo-link {
@@ -64,28 +77,71 @@ header {
 }
 
 .nav-logo {
-    height: 60px; /* Increased to fill more of the nav bar */
+    height: 60px;
     width: auto;
     transition: transform 0.3s ease;
-    mix-blend-mode: screen; /* Removes the black background */
-    filter: drop-shadow(0 0 5px rgba(123, 92, 255, 0.3)); /* Optional: enhances the glow */
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 5px rgba(123, 92, 255, 0.3));
 }
 
 .nav-logo:hover {
     transform: scale(1.05);
 }
 
-nav {
+.nav-center {
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 35px;
 }
 
-nav a {
-    color: var(--accent-1);
-    margin: 0 15px;
+.nav-center a {
+    color: #94a3b8;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 10px 0;
+}
+
+.nav-center a:hover, .nav-center a.active {
+    color: #ffffff;
+}
+
+.nav-center a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-center a.active::after, .nav-center a:hover::after {
+    width: 100%;
+}
+
+.hire-me-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
 nav a:hover {
