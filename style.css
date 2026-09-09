@@ -453,7 +453,7 @@ nav a:hover {
     height: 48px;
     border-radius: 50%;
     border: 2px solid rgba(255,255,255,0.15);
-    background: #0a0f1e;
+    background: #000000;
     color: #64748b;
     font-size: 0.8rem;
     font-weight: 700;
@@ -923,7 +923,7 @@ nav a:hover {
 /* ── Research & Ideas Section ───────────────────── */
 .research-section {
     padding: 100px 6%;
-    background: #0a0f1e;
+    background: transparent;
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
@@ -1056,7 +1056,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    background: #0a0f1e;
+    background: transparent;
 }
 
 .cta-bg-image {
@@ -1137,7 +1137,7 @@ nav a:hover {
 /* ── Services Section ───────────────────────────── */
 .services-section {
     padding: 100px 6%;
-    background: #0a0f1e;
+    background: transparent;
 }
 
 .services-header {
@@ -1286,7 +1286,7 @@ nav a:hover {
     gap: 60px;
     padding: 100px 6%;
     align-items: start;
-    background: #0a0f1e;
+    background: transparent;
 }
 
 /* LEFT */
@@ -2372,7 +2372,7 @@ body.about-page-bg .contact-info a {
 
 
 footer {
-    background: #000000;
+    background: transparent;
     padding: 60px 10%;
     border-top: 1px solid rgba(123, 92, 255, 0.2);
 }
