@@ -77,11 +77,9 @@ header {
 }
 
 .nav-logo {
-    height: 60px;
+    height: 70px;
     width: auto;
     transition: transform 0.3s ease;
-    mix-blend-mode: screen;
-    filter: drop-shadow(0 0 5px rgba(123, 92, 255, 0.3));
 }
 
 .nav-logo:hover {
