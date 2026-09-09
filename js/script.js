@@ -200,3 +200,67 @@ if (typewriterEl) {
         });
     });
 })();
+
+// Featured Projects Carousel
+(function () {
+    const track = document.getElementById("fp-track");
+    const prevBtn = document.getElementById("fp-prev");
+    const nextBtn = document.getElementById("fp-next");
+    const dotsContainer = document.getElementById("fp-dots");
+
+    if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+    const cards = Array.from(track.querySelectorAll(".fp-card"));
+    if (cards.length === 0) return;
+
+    // Create dots based on number of cards
+    cards.forEach((_, idx) => {
+        const dot = document.createElement("span");
+        dot.classList.add("fp-dot");
+        if (idx === 0) dot.classList.add("active");
+        
+        dot.addEventListener("click", () => {
+            const cardWidth = cards[0].offsetWidth + 24; // 24px is gap
+            track.scrollTo({
+                left: idx * cardWidth,
+                behavior: "smooth"
+            });
+        });
+        
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = Array.from(dotsContainer.querySelectorAll(".fp-dot"));
+
+    // Scroll by 1 card width
+    const scrollAmount = () => cards[0].offsetWidth + 24;
+
+    nextBtn.addEventListener("click", () => {
+        track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+
+    prevBtn.addEventListener("click", () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    // Update active dot on scroll
+    track.addEventListener("scroll", () => {
+        const scrollLeft = track.scrollLeft;
+        const cardWidth = scrollAmount();
+        
+        // Calculate which card is currently closest to the left edge
+        let currentIndex = Math.round(scrollLeft / cardWidth);
+        
+        // Bounds checking
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex >= dots.length) currentIndex = dots.length - 1;
+
+        dots.forEach((dot, idx) => {
+            if (idx === currentIndex) {
+                dot.classList.add("active");
+            } else {
+                dot.classList.remove("active");
+            }
+        });
+    });
+})();
