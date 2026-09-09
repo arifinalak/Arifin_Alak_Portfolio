@@ -64,9 +64,11 @@ header {
 }
 
 .nav-logo {
-    height: 40px;
+    height: 60px; /* Increased to fill more of the nav bar */
     width: auto;
     transition: transform 0.3s ease;
+    mix-blend-mode: screen; /* Removes the black background */
+    filter: drop-shadow(0 0 5px rgba(123, 92, 255, 0.3)); /* Optional: enhances the glow */
 }
 
 .nav-logo:hover {
