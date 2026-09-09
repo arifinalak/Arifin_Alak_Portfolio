@@ -316,30 +316,29 @@ nav a:hover {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 60px 0;
+    padding: 20px 0 40px;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
     pointer-events: none;
     z-index: 1;
 }
 
 .marquee-track {
-    width: 110%;
-    margin-left: -5%;
-    padding: 18px 0;
+    width: 115%;
+    margin-left: -7.5%;
+    padding: 16px 0;
     overflow: hidden;
 }
 
 .track-white {
     background: #ffffff;
-    transform: rotate(-5deg);
-    margin-bottom: -20px;
+    transform: rotate(-4deg);
 }
 
 .track-purple {
     background: #7b2ff7;
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
 }
 
 .marquee-inner {
