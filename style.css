@@ -800,13 +800,11 @@ nav a:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .fp-card:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(123, 47, 247, 0.2);
+    transform: translateY(-5px);
 }
 
 .fp-card-image {
