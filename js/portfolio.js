@@ -2,20 +2,20 @@
 (function () {
     // ---- Project data ----
     const projects = [
-        { t: 'Bangla ASL & Voice - VR Game', c: 'VR & AI', y: 2025, h: 280, i: 'fa-vr-cardboard', url: '#',
-          d: 'An immersive VR environment for kids to learn Bangladesh Sign Language using Unity & Meta Quest SDK with an intelligent AI agent.', tech: ['C#', 'Unity', 'Machine Learning', 'VR', 'NLP'] },
-        { t: 'Turn - E-commerce UI Design', c: 'Web Design', y: 2024, h: 250, i: 'fa-pen-nib', url: '#',
-          d: 'A modern, sleek, and high-performance landing page design built for a product company, focusing on creative storytelling and engaging UI/UX.', tech: ['Figma', 'UI/UX', 'Web Design'] },
-        { t: 'DreamFlex - Real Estate Platform', c: 'Full Stack', y: 2024, h: 300, i: 'fa-building', url: '#',
-          d: 'A comprehensive real estate platform designed to streamline property searching, buying, selling, and renting processes with a modern interface.', tech: ['React', 'Node.js', 'MongoDB', 'Express'] },
-        { t: 'IELTS Master - AI Platform', c: 'AI & Web', y: 2024, h: 230, i: 'fa-graduation-cap', url: '#',
-          d: 'An AI-driven web-based IELTS preparation platform designed for individuals looking to enhance their performance with smart feedback.', tech: ['Python', 'Django', 'OpenAI API', 'Tailwind'] },
-        { t: 'Shipment Delay Prediction', c: 'Machine Learning', y: 2023, h: 180, i: 'fa-truck-fast', url: '#',
-          d: 'Developed a machine learning model system for predicting whether an e-commerce shipment will be delayed or on time using historical data.', tech: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas'] },
-        { t: 'The Ultimate INVENTORY', c: 'Full Stack', y: 2023, h: 260, i: 'fa-boxes-stacked', url: '#',
-          d: 'A full-stack, comprehensive web app that allows an RMG manufacturing company to easily record and maintain their overall operations.', tech: ['Python', 'Flask', 'MySQL', 'Bootstrap'] },
-        { t: 'MAZZY - E-commerce Website', c: 'Web Development', y: 2024, h: 220, i: 'fa-cart-shopping', url: 'https://mazzybd.com/',
-          d: 'A modern e-commerce website with an intuitive design aimed at providing a smooth online shopping experience with clean product catalogues.', tech: ['WordPress', 'WooCommerce', 'SEO'] }
+        { t: 'BanglaLekha - Early Warning in Style', c: 'Full Stack', y: 2024, h: 280, i: 'fa-laptop-code', url: '#',
+          d: 'Built a comprehensive real-time warning tracking system for handling Bangla spelling mistakes using Google Cloud API. Achieved 98% tracking accuracy.', tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux'] },
+        { t: 'Turn - Presentation - Booking Portal (React)', c: 'Web Development', y: 2023, h: 250, i: 'fa-calendar-check', url: '#',
+          d: 'Turn is an interactive booking system and 3D web application designed for a product company, focusing on creative storytelling and engaging UI/UX.', tech: ['React.js', 'Framer Motion', 'Three.js', 'Tailwind CSS'] },
+        { t: 'CraneHex - A Smart Real Estate Platform', c: 'Full Stack', y: 2024, h: 300, i: 'fa-building', url: '#',
+          d: 'CraneHex is a full-stack real estate platform designed to streamline the property searching, buying, selling, and renting processes. It provides a robust experience for users.', tech: ['React', 'Node.js', 'MongoDB', 'Express'] },
+        { t: 'IELTS Master - AI-Powered IELTS Preparation Platform', c: 'AI & Web', y: 2024, h: 230, i: 'fa-graduation-cap', url: '#',
+          d: 'IELTS Master is an all-in-one AI-driven IELTS preparation platform designed for individuals looking to enhance their performance, test exposure, and overall IELTS test scores.', tech: ['Python', 'Django', 'OpenAI API', 'Tailwind'] },
+        { t: 'e-Commerce Proposed Billing Prediction Using Machine Learning', c: 'Machine Learning', y: 2023, h: 180, i: 'fa-robot', url: '#',
+          d: 'Developed a machine learning-based system for predicting whether an e-commerce customer will make a purchase before the actual purchase is confirmed, enhancing operational efficiency.', tech: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas'] },
+        { t: 'The Ultimate INVENTORY - Full Stack Inventory Management System for FMCG Industry', c: 'Full Stack', y: 2022, h: 260, i: 'fa-boxes-stacked', url: '#',
+          d: 'The Ultimate INVENTORY is a full-stack web application designed for the FMCG industry to easily record and maintain their overall operational management.', tech: ['PHP', 'Laravel', 'MySQL', 'Bootstrap'] },
+        { t: 'MAZZY - E-commerce Website', c: 'Web Development', y: 2023, h: 220, i: 'fa-cart-shopping', url: 'https://mazzybd.com/',
+          d: 'Mazzy is a full-stack E-commerce website with an intuitive design aimed to provide a smooth and engaging online shopping experience. It offers a clear product catalogue and seamless navigation.', tech: ['WordPress', 'WooCommerce', 'SEO'] }
     ];
 
     const $ = (s, r = document) => r.querySelector(s);
