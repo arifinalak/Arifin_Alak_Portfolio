@@ -28,13 +28,19 @@
     }
 
     // ---- Render cards ----
-    grid.innerHTML = projects.map((p, idx) => `
+    grid.innerHTML = projects.map((p, idx) => {
+        const hasImage = p.displayImage && p.displayImage.trim() !== '';
+        const thumbContent = hasImage
+            ? `<div style="width: 100%; height: 100%; background-image: url('${p.displayImage}'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; border-radius: inherit; z-index: 1;"></div>`
+            : `<span class="pf-shape s1"></span><span class="pf-shape s2"></span><span class="pf-shape s3"></span>
+               <i class="fa-solid ${p.i} pf-icon"></i>`;
+
+        return `
         <article class="pf-wrap" data-idx="${idx}">
             <div class="pf-card">
-                <div class="pf-thumb" style="--h:${p.h}">
-                    <span class="pf-badge">${p.c}</span><span class="pf-year">${p.y}</span>
-                    <span class="pf-shape s1"></span><span class="pf-shape s2"></span><span class="pf-shape s3"></span>
-                    <i class="fa-solid ${p.i} pf-icon"></i>
+                <div class="pf-thumb" style="--h:${p.h}; position: relative; overflow: hidden;">
+                    ${thumbContent}
+                    <span class="pf-badge" style="z-index: 2; position: relative;">${p.c}</span><span class="pf-year" style="z-index: 2; position: relative;">${p.y}</span>
                 </div>
                 <div class="pf-card-body">
                     <h3>${p.t}</h3>

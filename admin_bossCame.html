@@ -143,9 +143,20 @@
                     <textarea id="proj-features" rows="2" placeholder="Feature 1, Feature 2..."></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label>Image URLs (comma separated)</label>
-                    <textarea id="proj-images" rows="2" placeholder="https://image1.jpg, https://image2.jpg..."></textarea>
+                <!-- Display Image Upload -->
+                <div class="form-group" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                    <label>Upload Display Image (For Projects Grid Page)</label>
+                    <input type="file" id="proj-display-upload" accept="image/*" style="padding-bottom:10px;">
+                    <label>Or Image URL:</label>
+                    <input type="text" id="proj-display-url" placeholder="e.g. potfolio pic/myimage.jpg or https://...">
+                </div>
+
+                <!-- Multiple Images Upload -->
+                <div class="form-group" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <label>Upload Detail Images (For Project Details Page)</label>
+                    <input type="file" id="proj-images-upload" accept="image/*" multiple style="padding-bottom:10px;">
+                    <label>Or Image URLs (comma separated):</label>
+                    <textarea id="proj-images" rows="2" placeholder="potfolio pic/img1.jpg, potfolio pic/img2.jpg..."></textarea>
                 </div>
                 
                 <!-- Extra fields for masonry grid -->
@@ -155,7 +166,7 @@
                         <input type="number" id="proj-height" value="280">
                     </div>
                     <div class="form-group">
-                        <label>FontAwesome Icon (e.g. fa-robot)</label>
+                        <label>FontAwesome Icon (Fallback if no Display Image)</label>
                         <input type="text" id="proj-icon" value="fa-code">
                     </div>
                 </div>

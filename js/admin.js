@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('proj-tech').value = (proj.tech || []).join(', ');
         document.getElementById('proj-features').value = (proj.features || []).join(',\n');
         document.getElementById('proj-images').value = (proj.images || []).join(',\n');
+        document.getElementById('proj-display-url').value = proj.displayImage || '';
         
         document.getElementById('proj-height').value = proj.height || 280;
         document.getElementById('proj-icon').value = proj.icon || 'fa-code';
@@ -107,6 +108,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
+    });
+
+    // --- File Upload Logic with Compression ---
+    const displayUpload = document.getElementById('proj-display-upload');
+    const displayUrl = document.getElementById('proj-display-url');
+    const imagesUpload = document.getElementById('proj-images-upload');
+    const imagesUrl = document.getElementById('proj-images');
+
+    // Helper to compress image
+    function compressImage(file, maxWidth, callback) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = new Image();
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                let width = img.width;
+                let height = img.height;
+                
+                if (width > maxWidth) {
+                    height = Math.round((height * maxWidth) / width);
+                    width = maxWidth;
+                }
+                
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                // Compress as WebP at 70% quality to heavily reduce size
+                const compressedDataUrl = canvas.toDataURL('image/webp', 0.7);
+                callback(compressedDataUrl);
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    displayUpload.addEventListener('change', function() {
+        const file = this.files[0];
+        if (file) {
+            compressImage(file, 800, function(compressedStr) {
+                displayUrl.value = compressedStr;
+            });
+        }
+    });
+
+    imagesUpload.addEventListener('change', function() {
+        const files = this.files;
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            compressImage(file, 1000, function(compressedStr) {
+                const currentUrls = imagesUrl.value ? imagesUrl.value.split(',').map(s => s.trim()).filter(Boolean) : [];
+                currentUrls.push(compressedStr);
+                imagesUrl.value = currentUrls.join(',\n');
+            });
+        }
     });
 
     window.addEventListener('click', (e) => {
@@ -136,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
             features: document.getElementById('proj-features').value.split(',').map(s => s.trim()).filter(Boolean),
             images: document.getElementById('proj-images').value.split(',').map(s => s.trim()).filter(Boolean),
             
+            displayImage: document.getElementById('proj-display-url').value,
             height: parseInt(document.getElementById('proj-height').value) || 280,
             icon: document.getElementById('proj-icon').value || 'fa-code',
             
