@@ -133,3 +133,28 @@
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
 }
+
+/* ===== Marquee ribbons: richer look ===== */
+.marquee-inner.fx-js { animation: none !important; will-change: transform; }
+
+.track-white {
+    background: linear-gradient(180deg, #ffffff 0%, #ece6f7 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .55), 0 0 40px rgba(168, 85, 247, .18);
+}
+.track-purple {
+    background: linear-gradient(90deg, #6d1fd6 0%, #8b3dff 50%, #6d1fd6 100%);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, .6), 0 0 55px rgba(139, 61, 255, .45);
+}
+.track-purple .marquee-inner span { text-shadow: 0 2px 10px rgba(0, 0, 0, .35); }
+
+/* soft light sweep across each ribbon */
+.marquee-track::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, .28) 50%, transparent 65%);
+    background-size: 250% 100%;
+    animation: fx-sheen 6s ease-in-out infinite;
+}
+.track-purple::after { animation-delay: -3s; }
+@keyframes fx-sheen { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+
+@media (prefers-reduced-motion: reduce) { .marquee-track::after { animation: none; } }
