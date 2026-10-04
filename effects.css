@@ -125,13 +125,11 @@
 }
 @keyframes fx-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
-/* ===== Top menu bar: subtle falling-text background ===== */
-header { overflow: hidden; }
-header .rain-canvas {
-    position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;
-}
-header .nav-container { position: relative; z-index: 2; }
-header::after {
-    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-    background: linear-gradient(90deg, rgba(0,0,0,.7), rgba(0,0,0,.25) 50%, rgba(0,0,0,.7));
+/* ===== Story section: new falling-text strip replaces the old Purple Rain image ===== */
+#about-page::after { content: none; animation: none; }
+#about-page .rain-canvas {
+    position: absolute; left: 0; bottom: 0; width: 100%; height: 180px;
+    z-index: 0; pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
 }
