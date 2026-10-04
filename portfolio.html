@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects | Arifin Alak</title>
+    <meta name="description" content="Featured projects by Arifin Alak: web development, design, AI systems and more.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body class="pf-body-page">
+
+    <div class="pf-progress" id="pf-progress"></div>
+    <div class="pf-cursor-glow" id="pf-cursor-glow"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">ARIFIN <span style="color: var(--accent-1);">ALAK</span></span>
+                        <span class="nav-brand-tagline">DEVELOP / CREATE / INNOVATE</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="index.html#services">Services</a>
+                <a href="portfolio.html" class="active">Projects</a>
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">Hire Me</a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pf-hero">
+        <div class="pf-aurora a1"></div>
+        <div class="pf-aurora a2"></div>
+        <div class="pf-aurora a3"></div>
+        <div class="pf-hero-grid"></div>
+        <div class="pf-hero-inner">
+            <span class="pf-hero-chip"><i class="fa-solid fa-star"></i> Portfolio</span>
+            <h1 class="pf-hero-title" id="pf-title">Featured Projects</h1>
+            <p class="pf-hero-sub">A curated collection of things I've designed, built and shipped.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="pf-main">
+        <aside class="pf-sidebar">
+            <div class="pf-panel">
+                <label class="pf-label" for="pf-search">Search</label>
+                <div class="pf-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="pf-search" type="search" placeholder="Search projects..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="pf-panel">
+                <span class="pf-label">Categories</span>
+                <ul class="pf-cats" id="pf-cats"></ul>
+            </div>
+
+            <div class="pf-panel">
+                <span class="pf-label">Technologies</span>
+                <div class="pf-chips" id="pf-chips"></div>
+            </div>
+
+            <button class="pf-reset" id="pf-reset"><i class="fa-solid fa-rotate-left"></i> Reset filters</button>
+        </aside>
+
+        <section class="pf-content">
+            <div class="pf-toolbar">
+                <p class="pf-count" id="pf-count"></p>
+                <div class="pf-view">
+                    <button class="active" data-cols="3" aria-label="Three columns"><i class="fa-solid fa-table-cells"></i></button>
+                    <button data-cols="2" aria-label="Two columns"><i class="fa-solid fa-table-cells-large"></i></button>
+                </div>
+            </div>
+            <div class="pf-grid" id="pf-grid"></div>
+            <p class="pf-empty" id="pf-empty" hidden>No projects match your filters. Try something else!</p>
+        </section>
+    </main>
+
+    <!-- CTA -->
+    <section class="pf-cta">
+        <div class="pf-cta-box">
+            <div>
+                <h2>Have a project in mind?</h2>
+                <p>Let's build something extraordinary together.</p>
+            </div>
+            <a class="pf-btn-solid magnetic"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor"
+                target="_blank">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayed Arifin Ahmed Alak</h3>
+                <p class="tagline">Code Meets Creativity.</p>
+                <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic design to build identities that stand out. Every pixel has a purpose.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
+                    <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">⚙</a>
+                    <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LeetCode">◇</a>
+                    <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">X</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="portfolio.html">My Works</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Web Design</a></li>
+                    <li><a href="index.html#services">Web Development</a></li>
+                    <li><a href="index.html#services">Backend Development</a></li>
+                    <li><a href="index.html#services">AI &amp; Data Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
+                    <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
+                    <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Arifin Alak. All rights reserved.</p>
+            <p id="page-meta"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
