@@ -158,3 +158,18 @@
 @keyframes fx-sheen { from { background-position: 150% 0; } to { background-position: -50% 0; } }
 
 @media (prefers-reduced-motion: reduce) { .marquee-track::after { animation: none; } }
+
+/* ===== Marquee ribbons: smooth, un-clipped edges ===== */
+.marquee-section {
+    height: 300px;
+    margin: 40px 0;
+    overflow-x: clip;       /* only trim the sides of the page */
+    overflow-y: visible;    /* never cut the ribbons' top/bottom edges */
+}
+.marquee-track {
+    border-radius: 14px;
+    outline: 1px solid transparent;          /* forces smoother anti-aliasing on rotated edges */
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+}
