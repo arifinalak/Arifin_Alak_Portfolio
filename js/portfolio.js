@@ -1,31 +1,21 @@
 // ===== Featured Projects page: data, filters (FLIP animated), 3D tilt, effects =====
 (function () {
-    // ---- Project data (placeholder text for the new entries - edit freely) ----
+    // ---- Project data ----
     const projects = [
-        { t: 'MAZZY E-commerce', c: 'Web Development', y: 2025, h: 275, i: 'fa-bag-shopping', url: 'https://mazzybd.com/',
-          d: 'An online clothing brand store with a clean catalogue, smooth checkout and mobile-first layout.', tech: ['WordPress', 'WooCommerce', 'SEO'] },
-        { t: 'AI Diagnosis System', c: 'AI & Data', y: 2026, h: 190, i: 'fa-stethoscope', url: '#',
-          d: 'Upcoming university thesis project that assists diagnosis with machine learning models.', tech: ['Python', 'Machine Learning'] },
-        { t: 'AI Video Translator', c: 'AI & Data', y: 2025, h: 220, i: 'fa-language', url: '#',
-          d: 'Automated system that translates spoken audio into content in different languages.', tech: ['Python', 'Flask', 'HTML', 'CSS'] },
-        { t: 'RMG Inventory System', c: 'Backend', y: 2025, h: 160, i: 'fa-boxes-stacked', url: '#',
-          d: 'Inventory management platform built for the Ready-Made Garments industry.', tech: ['Python', 'Flask', 'MySQL'] },
-        { t: 'Zombie Shooting Game', c: 'Games', y: 2024, h: 120, i: 'fa-skull', url: '#',
-          d: 'A fast 2D zombie shooter with waves, score tracking and smooth controls.', tech: ['Python', 'OpenGL'] },
-        { t: 'Full Circle Event', c: 'Web Development', y: 2024, h: 300, i: 'fa-calendar-star', url: '#',
-          d: 'Responsive website for an AV hire and event production company.', tech: ['WordPress', 'Elementor', 'HTML'] },
-        { t: 'PNP Construction LTD', c: 'Web Development', y: 2024, h: 30, i: 'fa-helmet-safety', url: '#',
-          d: 'Custom built, SEO optimised website for a construction company.', tech: ['WordPress', 'Elementor', 'Figma'] },
-        { t: 'DermalMD', c: 'Web Design', y: 2024, h: 335, i: 'fa-droplet', url: '#',
-          d: 'A sleek, conversion focused landing page design for a skincare brand.', tech: ['Figma', 'UI Design'] },
-        { t: 'Lauren & Co', c: 'Web Development', y: 2024, h: 250, i: 'fa-scissors', url: '#',
-          d: 'Animated, responsive salon landing page built from a Figma design.', tech: ['WordPress', 'Elementor', 'HTML'] },
-        { t: 'Portfolio Website', c: 'Web Design', y: 2026, h: 265, i: 'fa-pen-ruler', url: 'index.html',
-          d: 'This very portfolio: dark, animated and fully responsive.', tech: ['HTML', 'CSS', 'JavaScript'] },
-        { t: 'Task Tracker API', c: 'Backend', y: 2025, h: 205, i: 'fa-list-check', url: '#',
-          d: 'A small REST API with auth, tasks, tags and a clean data model.', tech: ['Python', 'Flask', 'MySQL'] },
-        { t: 'Prompt Playground', c: 'AI & Data', y: 2025, h: 310, i: 'fa-wand-magic-sparkles', url: '#',
-          d: 'A playground to experiment with prompt engineering and compare AI outputs.', tech: ['Python', 'Flask', 'JavaScript'] }
+        { t: 'Bangla ASL & Voice - VR Game', c: 'VR & AI', y: 2025, h: 280, i: 'fa-vr-cardboard', url: '#',
+          d: 'An immersive VR environment for kids to learn Bangladesh Sign Language using Unity & Meta Quest SDK with an intelligent AI agent.', tech: ['C#', 'Unity', 'Machine Learning', 'VR', 'NLP'] },
+        { t: 'Turn - E-commerce UI Design', c: 'Web Design', y: 2024, h: 250, i: 'fa-pen-nib', url: '#',
+          d: 'A modern, sleek, and high-performance landing page design built for a product company, focusing on creative storytelling and engaging UI/UX.', tech: ['Figma', 'UI/UX', 'Web Design'] },
+        { t: 'DreamFlex - Real Estate Platform', c: 'Full Stack', y: 2024, h: 300, i: 'fa-building', url: '#',
+          d: 'A comprehensive real estate platform designed to streamline property searching, buying, selling, and renting processes with a modern interface.', tech: ['React', 'Node.js', 'MongoDB', 'Express'] },
+        { t: 'IELTS Master - AI Platform', c: 'AI & Web', y: 2024, h: 230, i: 'fa-graduation-cap', url: '#',
+          d: 'An AI-driven web-based IELTS preparation platform designed for individuals looking to enhance their performance with smart feedback.', tech: ['Python', 'Django', 'OpenAI API', 'Tailwind'] },
+        { t: 'Shipment Delay Prediction', c: 'Machine Learning', y: 2023, h: 180, i: 'fa-truck-fast', url: '#',
+          d: 'Developed a machine learning model system for predicting whether an e-commerce shipment will be delayed or on time using historical data.', tech: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas'] },
+        { t: 'The Ultimate INVENTORY', c: 'Full Stack', y: 2023, h: 260, i: 'fa-boxes-stacked', url: '#',
+          d: 'A full-stack, comprehensive web app that allows an RMG manufacturing company to easily record and maintain their overall operations.', tech: ['Python', 'Flask', 'MySQL', 'Bootstrap'] },
+        { t: 'MAZZY - E-commerce Website', c: 'Web Development', y: 2024, h: 220, i: 'fa-cart-shopping', url: 'https://mazzybd.com/',
+          d: 'A modern e-commerce website with an intuitive design aimed at providing a smooth online shopping experience with clean product catalogues.', tech: ['WordPress', 'WooCommerce', 'SEO'] }
     ];
 
     const $ = (s, r = document) => r.querySelector(s);
