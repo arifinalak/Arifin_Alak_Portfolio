@@ -263,4 +263,24 @@ if (typewriterEl) {
             }
         });
     });
+
+    // 3D Tilt Effect on Cards
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion && matchMedia('(hover: hover)').matches) {
+        track.addEventListener('pointermove', e => {
+            const card = e.target.closest('.fp-card');
+            if (!card) return;
+            const r = card.getBoundingClientRect();
+            const x = e.clientX - r.left;
+            const y = e.clientY - r.top;
+            card.style.setProperty('--ry', ((x / r.width - 0.5) * 12).toFixed(2) + 'deg');
+            card.style.setProperty('--rx', ((0.5 - y / r.height) * 10).toFixed(2) + 'deg');
+        });
+        track.addEventListener('pointerout', e => {
+            const card = e.target.closest('.fp-card');
+            if (!card || card.contains(e.relatedTarget)) return;
+            card.style.setProperty('--rx', '0deg');
+            card.style.setProperty('--ry', '0deg');
+        });
+    }
 })();
