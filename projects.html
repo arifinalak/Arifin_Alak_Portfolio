@@ -1,142 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Arifin Alak</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="effects.css">
 </head>
 
 <body>
 
-<header>
-    <div class="nav-container">
-        <div class="nav-left">
-            <a href="index.html" class="logo-link">
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
                     <div class="nav-brand-text">
                         <span class="nav-brand-name">ARIFIN <span style="color: var(--accent-1);">ALAK</span></span>
                         <span class="nav-brand-tagline">DEVELOP / CREATE / INNOVATE</span>
                     </div>
-            </a>
+                </a>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="index.html#services">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <nav class="nav-center" id="main-nav">
-            <a href="index.html#home">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="index.html#services">Services</a>
-            <a href="projects.html" class="active">Projects</a>
-            <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Hire Me
-            </a>
-        </nav>
-        <div class="nav-right">
-            <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Hire Me
-            </a>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>E-commarce Website</h3>
+                <p>An e-commerce website named <a href="https://mazzybd.com/" target="https://mazzybd.com/">MAZZY</a>.
+                    An online clothing brand. <br><i><b>Tech Stack:</b> WordPress</i></p>
+
+            </div>
+
+            <div class="card">
+                <h3>AI Diagnosis System</h3>
+                <p>This is my upcoming project for my university thesis.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Video Translator</h3>
+                <p>Automated system that translates audio into different language content. <br><i><b>Tech Stack:</b>
+                        Python, Flask, Html, Css</i></p>
+            </div>
+
+            <div class="card">
+                <h3>Inventory Management System for RMG Industry</h3>
+                <p>Automated system that manages inventory for Ready-Made Garments (RMG) industry. <br><i><b>Tech
+                            Stack:</b> Python, Flask, Html, Css</i></p>
+            </div>
+
+            <div class="card">
+                <h3>Zombie Shooting Game</h3>
+                <p>A 2D zombie shooting game built with Python and Pygame.<br><i><b>Tech Stack:</b> Python, OpenGL</i>
+                </p>
+            </div>
+
         </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayed Arifin Ahmed Alak</h3>
+                <p class="tagline">Code Meets Creativity.</p>
+                <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic
+                    design to build identities that stand out. Every pixel has a purpose.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank"
+                        rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
+                    <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="GitHub">⚙</a>
+                    <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="LeetCode">◇</a>
+                    <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon"
+                        title="X (Twitter)">X</a>
+                </div>
+            </div>
 
-    <div class="projects">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="projects.html">My Works</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <!-- <li><a href="index.html#hobbies">Hobbies</a></li> -->
 
-        <div class="card">
-            <h3>E-commarce Website</h3>
-            <p>An e-commerce website named <a href="https://mazzybd.com/" target="https://mazzybd.com/">MAZZY</a>. An online clothing brand. <br><i><b>Tech Stack:</b> WordPress</i></p>
+                </ul>
+            </div>
 
-        </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Web Design</a></li>
+                    <li><a href="index.html#services">Web Development</a></li>
+                    <li><a href="index.html#services">Backend Development</a></li>
+                    <li><a href="index.html#services">Bug Fixing</a></li>
+                    <li><a href="index.html#services">AI & Data Solutions</a></li>
+                    <li><a href="index.html#services">SEO Optimization</a></li>
+                </ul>
+            </div>
 
-        <div class="card">
-            <h3>AI Diagnosis System</h3>
-            <p>This is my upcoming project for my university thesis.</p>
-        </div>
-
-        <div class="card">
-            <h3>AI Video Translator</h3>
-            <p>Automated system that translates audio into different language content. <br><i><b>Tech Stack:</b> Python, Flask, Html, Css</i></p>
-        </div>
-
-        <div class="card">
-            <h3>Inventory Management System for RMG Industry</h3>
-            <p>Automated system that manages inventory for Ready-Made Garments (RMG) industry. <br><i><b>Tech Stack:</b> Python, Flask, Html, Css</i></p>
-        </div>
-
-        <div class="card">
-            <h3>Zombie Shooting Game</h3>
-            <p>A 2D zombie shooting game built with Python and Pygame.<br><i><b>Tech Stack:</b> Python, OpenGL</i> </p>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Sayed Arifin Ahmed Alak</h3>
-            <p class="tagline">Code Meets Creativity.</p>
-            <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic design to build identities that stand out. Every pixel has a purpose.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
-                <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">⚙</a>
-                <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LeetCode">◇</a>
-                <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">X</a>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
+                    <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
+                    <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor"
+                    class="get-in-touch">Get in Touch <span class="arrow">→</span></a>
             </div>
         </div>
-        
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-                <li><a href="projects.html">My Works</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <!-- <li><a href="index.html#hobbies">Hobbies</a></li> -->
-                
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Services</h4>
-            <ul class="footer-links">
-                <li><a href="index.html#services">Web Design</a></li>
-                <li><a href="index.html#services">Web Development</a></li>
-                <li><a href="index.html#services">Backend Development</a></li>
-                <li><a href="index.html#services">Bug Fixing</a></li>
-                <li><a href="index.html#services">AI & Data Solutions</a></li>
-                <li><a href="index.html#services">SEO Optimization</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <ul class="contact-info">
-                <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
-                <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
-                <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor" class="get-in-touch">Get in Touch <span class="arrow">→</span></a>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>© 2026 Arifin Alak. All rights reserved.</p>
 
-        <p id="page-meta"></p>
+        <div class="footer-bottom">
+            <p>© 2026 Arifin Alak. All rights reserved.</p>
 
-    </div>
-</footer>
+            <p id="page-meta"></p>
 
-<script src="js/script.js"></script>
-<script src="js/matrix-rain.js"></script>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
