@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Arifin Alak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+    <!-- Login Section -->
+    <div id="login-section" class="admin-login-container">
+        <div class="admin-login-box">
+            <h2>Admin Access</h2>
+            <p>Please log in to manage your portfolio.</p>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="username">Username / Email</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <p id="login-error" class="error-msg"></p>
+                <button type="submit" class="admin-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Section (Hidden initially) -->
+    <div id="dashboard-section" class="admin-dashboard-container" style="display: none;">
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <h3>Admin Panel</h3>
+            </div>
+            <nav class="admin-nav">
+                <a href="#" class="active" id="nav-projects"><i class="fa-solid fa-briefcase"></i> Manage Projects</a>
+                <!-- Future sections can be added here -->
+            </nav>
+            <button id="logout-btn" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+        </aside>
+        
+        <main class="admin-main">
+            <div class="admin-header">
+                <h2>Projects Dashboard</h2>
+                <button id="add-project-btn" class="admin-btn primary-btn"><i class="fa-solid fa-plus"></i> Add New Project</button>
+            </div>
+            
+            <div class="admin-content">
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Year</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projects-table-body">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Add/Edit Project</h2>
+            <form id="project-form">
+                <input type="hidden" id="proj-id">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="proj-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <input type="text" id="proj-category" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Year</label>
+                        <input type="text" id="proj-year" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Timeline / Duration</label>
+                        <input type="text" id="proj-timeline">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Role</label>
+                        <input type="text" id="proj-role">
+                    </div>
+                    <div class="form-group">
+                        <label>Live URL</label>
+                        <input type="text" id="proj-liveUrl">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Short Description (Grid)</label>
+                    <textarea id="proj-shortDesc" rows="2" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Intro (Details Page)</label>
+                    <textarea id="proj-intro" rows="2"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Overview</label>
+                    <textarea id="proj-overview" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Challenges</label>
+                    <textarea id="proj-challenges" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Results</label>
+                    <textarea id="proj-results" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Tech Stack (comma separated)</label>
+                    <input type="text" id="proj-tech" placeholder="HTML, CSS, JS">
+                </div>
+
+                <div class="form-group">
+                    <label>Features (comma separated)</label>
+                    <textarea id="proj-features" rows="2" placeholder="Feature 1, Feature 2..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Image URLs (comma separated)</label>
+                    <textarea id="proj-images" rows="2" placeholder="https://image1.jpg, https://image2.jpg..."></textarea>
+                </div>
+                
+                <!-- Extra fields for masonry grid -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Card Height (e.g. 280)</label>
+                        <input type="number" id="proj-height" value="280">
+                    </div>
+                    <div class="form-group">
+                        <label>FontAwesome Icon (e.g. fa-robot)</label>
+                        <input type="text" id="proj-icon" value="fa-code">
+                    </div>
+                </div>
+
+                <button type="submit" class="admin-btn primary-btn" style="width: 100%; margin-top: 15px;">Save Project</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Load data script first, then admin logic -->
+    <script src="js/data.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
