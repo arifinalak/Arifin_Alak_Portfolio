@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Arifin Alak</title>
+    <meta name="description" content="Project details of Arifin Alak's portfolio.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-details.css">
+</head>
+
+<body class="pf-body-page">
+
+    <div class="pf-progress" id="pf-progress"></div>
+    <div class="pf-cursor-glow" id="pf-cursor-glow"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">ARIFIN <span style="color: var(--accent-1);">ALAK</span></span>
+                        <span class="nav-brand-tagline">DEVELOP / CREATE / INNOVATE</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="index.html#services">Services</a>
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">Hire Me</a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Hire Me
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- HERO BACKGROUND -->
+    <div class="pd-hero-bg">
+        <div class="pd-overlay"></div>
+        <div class="pd-hero-content">
+            <span class="pd-hero-chip" id="pd-category">Category</span>
+            <h1 class="pd-hero-title" id="pd-title">Project Title</h1>
+            <p class="pd-hero-sub" id="pd-subtitle">Short subtitle or description of the project goes here.</p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="pd-container">
+        <a href="portfolio.html" class="pd-back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+        <div class="pd-layout">
+            <!-- Left Column: Details -->
+            <div class="pd-main-content">
+                <div class="pd-meta-header">
+                    <span class="pd-meta-item" id="pd-meta-cat"><i class="fa-solid fa-tag"></i> Category</span>
+                    <span class="pd-meta-item" id="pd-meta-duration"><i class="fa-regular fa-clock"></i> Duration</span>
+                </div>
+                
+                <h2 class="pd-section-title" id="pd-main-title">Project Title</h2>
+                <p class="pd-intro" id="pd-intro">Intro text...</p>
+
+                <!-- Mockup Images -->
+                <div class="pd-gallery" id="pd-gallery">
+                    <!-- Images generated via JS -->
+                </div>
+
+                <div class="pd-content-section">
+                    <h3>Project Overview</h3>
+                    <p id="pd-overview">Overview text...</p>
+                </div>
+
+                <div class="pd-content-section">
+                    <h3>Challenges</h3>
+                    <p id="pd-challenges">Challenges text...</p>
+                </div>
+
+                <div class="pd-content-section">
+                    <h3>Results</h3>
+                    <p id="pd-results">Results text...</p>
+                </div>
+
+                <div class="pd-tools">
+                    <h4><i class="fa-solid fa-wrench"></i> Tools & Technologies:</h4>
+                    <div class="pd-tech-chips" id="pd-tech-chips">
+                        <!-- Tech chips generated via JS -->
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="pd-navigation">
+                    <a href="#" class="pd-nav-btn" id="pd-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <div>
+                            <span>Previous Project</span>
+                            <strong id="pd-prev-title">Title</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="pd-nav-btn pd-nav-next" id="pd-next">
+                        <div>
+                            <span>Next Project</span>
+                            <strong id="pd-next-title">Title</strong>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <div class="pd-sidebar">
+                <div class="pd-sidebar-box">
+                    <ul class="pd-sidebar-meta">
+                        <li><span>Role</span> <strong id="pd-side-role">Developer</strong></li>
+                        <li><span>Timeline</span> <strong id="pd-side-timeline">2 weeks</strong></li>
+                        <li><span>Date</span> <strong id="pd-side-date">2026</strong></li>
+                    </ul>
+                    <a href="#" id="pd-live-btn" target="_blank" class="pd-btn-solid">View Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="pd-sidebar-box">
+                    <h3>Key Features</h3>
+                    <ul class="pd-features-list" id="pd-features">
+                        <!-- Features generated via JS -->
+                    </ul>
+                </div>
+
+                <div class="pd-sidebar-cta">
+                    <i class="fa-regular fa-window-restore cta-icon"></i>
+                    <h3>Need a similar project?</h3>
+                    <p>I can help you build a custom solution tailored to your specific requirements.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform" target="_blank" class="pd-btn-outline">Launch Your Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="pf-cta pd-bottom-cta">
+        <div class="pf-cta-box">
+            <div>
+                <h2>Have a project in mind?</h2>
+                <p>Let's build something extraordinary together.</p>
+            </div>
+            <a class="pf-btn-solid magnetic"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor"
+                target="_blank">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayed Arifin Ahmed Alak</h3>
+                <p class="tagline">Code Meets Creativity.</p>
+                <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic design to build identities that stand out. Every pixel has a purpose.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sayed-arifin-ahmed-alak-68a205397/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
+                    <a href="https://github.com/arifinalak" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">⚙</a>
+                    <a href="https://leetcode.com/u/arifinalak/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LeetCode">◇</a>
+                    <a href="https://x.com/AlakArifin198" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">X</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="portfolio.html">My Works</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Web Design</a></li>
+                    <li><a href="index.html#services">Web Development</a></li>
+                    <li><a href="index.html#services">Backend Development</a></li>
+                    <li><a href="index.html#services">AI &amp; Data Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li>66/1 Narayanganj, Dhaka, Bangladesh</li>
+                    <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
+                    <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Arifin Alak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/project-details.js"></script>
+</body>
+
+</html>
