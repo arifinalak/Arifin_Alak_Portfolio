@@ -2,6 +2,60 @@
     // Extended Project Data
     const projects = [
         {
+            title: 'AgroScan - AI Crop Disease Detection',
+            category: 'AI & Web',
+            date: '2026',
+            timeline: 'Ongoing',
+            role: 'Full Stack & AI Developer',
+            liveUrl: 'https://github.com/arifinalak/AgroScan',
+            shortDesc: 'AI-powered crop disease detection through a web app and an Android app.',
+            intro: 'AgroScan is an AI-powered system that helps farmers identify crop diseases from a photo of a plant leaf, returning the most likely disease along with useful guidance.',
+            overview: 'A trained deep learning model sits behind a Python REST API. The web interface and the Android app both send leaf images to the API and display the prediction. The repository documents how the system works, the project roadmap, API routes, quick start, and the training data.',
+            challenges: 'Training an accurate classifier on varied real-world leaf images, keeping inference fast enough for mobile use, and exposing one clean API that serves both the web client and the Android app.',
+            results: 'A working end-to-end pipeline: image upload, model prediction and result display, with an Android APK, documented API routes and reproducible training data and setup.',
+            tech: ['Python', 'Deep Learning', 'Flask', 'REST API', 'Android'],
+            features: [
+                'Disease prediction from a leaf photo',
+                'Web app and Android APK',
+                'Documented REST API routes',
+                'Quick-start setup and training data notes',
+                'Clear architecture: capture, model, prediction, result'
+            ],
+            images: [
+                'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80'
+            ]
+        },
+        {
+            title: 'Rupgao Resort - A Knowledge Exchange Centre',
+            category: 'Full Stack',
+            date: '2026',
+            timeline: 'Ongoing',
+            role: 'Full Stack Developer',
+            liveUrl: 'https://github.com/arifinalak/Rupgao',
+            shortDesc: 'A complete full-stack web application for a resort and knowledge exchange centre.',
+            intro: 'Rupgao Resort is a complete web application for a knowledge exchange centre, combining a polished public-facing website with a Node.js backend, a PostgreSQL database and an admin panel.',
+            overview: 'The project is organised into a clear frontend and backend structure. Visitors can explore the resort, its packages and events and send bookings or enquiries, while administrators log in to manage the content through a secured admin area backed by REST API endpoints.',
+            challenges: 'Designing a relational PostgreSQL schema for packages, bookings, events and content, wiring it to a clean REST API, and keeping the frontend working both standalone (frontend-only mode) and with the full backend were the main challenges.',
+            results: 'Delivered a full-stack system with an easy quick-start for frontend-only use and a documented backend setup, database tables, admin login, a consistent design theme and a well-defined API.',
+            tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL', 'REST API'],
+            features: [
+                'Frontend-only quick start and full backend setup',
+                'Node.js + PostgreSQL backend with REST API endpoints',
+                'Structured database tables for resort content and bookings',
+                'Admin login and management panel',
+                'Consistent custom design theme',
+                'Responsive, modern user interface'
+            ],
+            images: [
+                'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80'
+            ]
+        },
+
+        {
             title: 'Bangladesh Flood Early Warning AI Agent',
             category: 'AI & Web',
             date: 'Jun 2026 – Jul 2026',
@@ -181,33 +235,6 @@
                 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80',
                 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=600&q=80',
                 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80'
-            ]
-        },
-        {
-            title: 'Rupgao Resort - A Knowledge Exchange Centre',
-            category: 'Full Stack',
-            date: '2026',
-            timeline: 'Ongoing',
-            role: 'Full Stack Developer',
-            liveUrl: 'https://github.com/arifinalak/Rupgao',
-            shortDesc: 'A complete full-stack web application for a resort and knowledge exchange centre.',
-            intro: 'Rupgao Resort is a complete web application for a knowledge exchange centre, combining a polished public-facing website with a Node.js backend, a PostgreSQL database and an admin panel.',
-            overview: 'The project is organised into a clear frontend and backend structure. Visitors can explore the resort, its packages and events and send bookings or enquiries, while administrators log in to manage the content through a secured admin area backed by REST API endpoints.',
-            challenges: 'Designing a relational PostgreSQL schema for packages, bookings, events and content, wiring it to a clean REST API, and keeping the frontend working both standalone (frontend-only mode) and with the full backend were the main challenges.',
-            results: 'Delivered a full-stack system with an easy quick-start for frontend-only use and a documented backend setup, database tables, admin login, a consistent design theme and a well-defined API.',
-            tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL', 'REST API'],
-            features: [
-                'Frontend-only quick start and full backend setup',
-                'Node.js + PostgreSQL backend with REST API endpoints',
-                'Structured database tables for resort content and bookings',
-                'Admin login and management panel',
-                'Consistent custom design theme',
-                'Responsive, modern user interface'
-            ],
-            images: [
-                'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80'
             ]
         }
     ];

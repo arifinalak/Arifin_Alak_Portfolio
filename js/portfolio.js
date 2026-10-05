@@ -3,40 +3,44 @@
     // ---- Project data ----
     const projects = [
         {
-            t: 'Bangladesh Flood Early Warning AI Agent', c: 'AI & Web', y: 2026, h: 280, i: 'fa-robot', url: 'project-details.html?id=0',
+            t: 'AgroScan — AI Crop Disease Detection', c: 'AI & Web', y: 2026, h: 290, i: 'fa-leaf', url: 'project-details.html?id=0',
+            d: 'An AI-powered crop disease detection system that analyses plant leaf photos and returns the likely disease with guidance, available through a web app and an Android app.', tech: ['Python', 'Deep Learning', 'Flask', 'Android', 'REST API']
+        },
+        {
+            t: 'Rupgao Resort — A Knowledge Exchange Centre', c: 'Full Stack', y: 2026, h: 270, i: 'fa-hotel', url: 'project-details.html?id=1',
+            d: 'A complete full-stack web application for a resort and knowledge exchange centre with a dynamic frontend, REST API backend, PostgreSQL database and an admin panel.', tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL']
+        },
+        {
+            t: 'Bangladesh Flood Early Warning AI Agent', c: 'AI & Web', y: 2026, h: 280, i: 'fa-robot', url: 'project-details.html?id=2',
             d: 'Built an autonomous AI agent that monitors river water levels and rainfall in real-time, reasons about flood risk using Google Gemini AI, and automatically sends Bangla-language SMS alerts.', tech: ['Python', 'Google Gemini AI', 'Firebase', 'Flask', 'Twilio SMS']
         },
         {
-            t: 'Terra Luxe — Grameenphone Academy Contest Project', c: 'Web Design', y: 2026, h: 250, i: 'fa-gem', url: 'project-details.html?id=1',
+            t: 'Terra Luxe — Grameenphone Academy Contest Project', c: 'Web Design', y: 2026, h: 250, i: 'fa-gem', url: 'project-details.html?id=3',
             d: 'A premium luxury e-commerce concept featuring an immersive product showcase that combines modern UI/UX, interactive animations, 3D visualization, and creative storytelling.', tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Three.js']
         },
         {
-            t: 'EstateFlow - A Smart Real Estate Platform', c: 'Full Stack', y: 2026, h: 300, i: 'fa-building', url: 'project-details.html?id=2',
+            t: 'EstateFlow - A Smart Real Estate Platform', c: 'Full Stack', y: 2026, h: 300, i: 'fa-building', url: 'project-details.html?id=4',
             d: 'A full-stack real estate platform designed to streamline property buying, selling, and investing through a role-based system for multiple user types.', tech: ['Python', 'Flask', 'Backend Development']
         },
         {
-            t: 'IELTS Master – AI-Powered IELTS Preparation Platform', c: 'Full Stack', y: 2026, h: 230, i: 'fa-graduation-cap', url: 'project-details.html?id=3',
+            t: 'IELTS Master – AI-Powered IELTS Preparation Platform', c: 'Full Stack', y: 2026, h: 230, i: 'fa-graduation-cap', url: 'project-details.html?id=5',
             d: 'A full-stack web-based IELTS preparation platform designed to help students practice, track their performance, and improve their overall IELTS band score.', tech: ['Laravel', 'PHP', 'Web Development']
         },
         {
-            t: 'E-Commerce Shipment Delay Prediction Using Machine Learning', c: 'Machine Learning', y: 2025, h: 180, i: 'fa-truck-fast', url: 'project-details.html?id=4',
+            t: 'E-Commerce Shipment Delay Prediction Using Machine Learning', c: 'Machine Learning', y: 2025, h: 180, i: 'fa-truck-fast', url: 'project-details.html?id=6',
             d: 'Developed a machine learning-based system for predicting whether an e-commerce shipment will be delivered on time using a dataset of 10,999 instances.', tech: ['Python', 'Machine Learning', 'Data Analysis', 'Scikit-learn']
         },
         {
-            t: 'The Ultimate INVENTORY – Full Stack Inventory Management System for RMG Industry', c: 'Full Stack', y: 2025, h: 260, i: 'fa-boxes-stacked', url: 'project-details.html?id=5',
+            t: 'The Ultimate INVENTORY – Full Stack Inventory Management System for RMG Industry', c: 'Full Stack', y: 2025, h: 260, i: 'fa-boxes-stacked', url: 'project-details.html?id=7',
             d: 'A full-stack web application developed to streamline and digitize inventory and operational management in the Ready-Made Garments (RMG) industry, built using Python and Flask.', tech: ['Python', 'Flask', 'HTML', 'CSS', 'Full Stack']
         },
         {
-            t: 'MAZZY – E-Commerce Website', c: 'Web Development', y: 2025, h: 220, i: 'fa-cart-shopping', url: 'project-details.html?id=6',
+            t: 'MAZZY – E-Commerce Website', c: 'Web Development', y: 2025, h: 220, i: 'fa-cart-shopping', url: 'project-details.html?id=8',
             d: 'A modern and responsive e-commerce website designed to provide a smooth and engaging online shopping experience featuring a clean UI, secure checkout, and product management.', tech: ['Web Development', 'E-commerce', 'UI/UX']
-        },
-        {
-            t: 'Rupgao Resort — A Knowledge Exchange Centre', c: 'Full Stack', y: 2026, h: 270, i: 'fa-hotel', url: 'project-details.html?id=7',
-            d: 'A complete full-stack web application for a resort and knowledge exchange centre with a dynamic frontend, REST API backend, PostgreSQL database and an admin panel.', tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL']
         }
     ];
 
-    const IMGS = ['photo-1518770660439-4636190af475','photo-1600132806370-bf17e65e942f','photo-1560518883-ce09059eeffa','photo-1434030216411-0b793f4b4173','photo-1566576721346-d4a3b4eaeb55','photo-1553413077-190dd305871c','photo-1556742049-0cfed4f6a45d','photo-1566073771259-6a8506099945'];
+    const IMGS = ['photo-1625246333195-78d9c38ad449','photo-1566073771259-6a8506099945','photo-1518770660439-4636190af475','photo-1600132806370-bf17e65e942f','photo-1560518883-ce09059eeffa','photo-1434030216411-0b793f4b4173','photo-1566576721346-d4a3b4eaeb55','photo-1553413077-190dd305871c','photo-1556742049-0cfed4f6a45d'];
     projects.forEach((p, i) => p.img = 'https://images.unsplash.com/' + IMGS[i] + '?auto=format&fit=crop&w=800&q=75');
 
     const $ = (s, r = document) => r.querySelector(s);
