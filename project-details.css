@@ -2,21 +2,22 @@
 .pd-hero-bg {
     position: relative;
     width: 100%;
-    min-height: 450px;
+    min-height: 400px;
     background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px 60px;
+    padding: 100px 20px 40px;
     margin-top: 70px;
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
-    margin-bottom: 20px;
 }
 
 .pd-overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.95) 100%);
     backdrop-filter: blur(2px);
 }
@@ -70,6 +71,7 @@
     transition: color 0.3s;
     margin-bottom: 30px;
 }
+
 .pd-back-link:hover {
     color: var(--accent-1);
 }
@@ -101,6 +103,7 @@
     align-items: center;
     gap: 6px;
 }
+
 .pd-meta-item i {
     color: var(--accent-1);
 }
@@ -125,6 +128,7 @@
     gap: 15px;
     margin-bottom: 40px;
 }
+
 .pd-gallery img {
     width: 100%;
     border-radius: 10px;
@@ -133,6 +137,7 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.3s;
 }
+
 .pd-gallery img:hover {
     transform: scale(1.02);
 }
@@ -140,11 +145,13 @@
 .pd-content-section {
     margin-bottom: 40px;
 }
+
 .pd-content-section h3 {
     font-size: 1.4rem;
     color: var(--text-light);
     margin-bottom: 15px;
 }
+
 .pd-content-section p {
     color: var(--text-muted);
     line-height: 1.7;
@@ -154,15 +161,18 @@
 .pd-tools {
     margin-bottom: 60px;
 }
+
 .pd-tools h4 {
     margin-bottom: 15px;
     color: var(--text-light);
 }
+
 .pd-tech-chips {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .pd-tech-chips span {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -180,6 +190,7 @@
     padding-top: 30px;
     margin-bottom: 40px;
 }
+
 .pd-nav-btn {
     display: flex;
     align-items: center;
@@ -194,27 +205,33 @@
     flex: 1;
     max-width: 48%;
 }
+
 .pd-nav-btn:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: var(--accent-1);
 }
+
 .pd-nav-btn.disabled {
     opacity: 0.4;
     pointer-events: none;
 }
+
 .pd-nav-btn i {
     color: var(--accent-1);
 }
+
 .pd-nav-btn div {
     display: flex;
     flex-direction: column;
 }
+
 .pd-nav-btn span {
     font-size: 0.75rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .pd-nav-btn strong {
     font-size: 0.95rem;
     white-space: nowrap;
@@ -222,13 +239,21 @@
     text-overflow: ellipsis;
     max-width: 200px;
 }
+
 .pd-nav-next {
     text-align: right;
     justify-content: flex-end;
 }
+
 @media (max-width: 600px) {
-    .pd-navigation { flex-direction: column; gap: 15px; }
-    .pd-nav-btn { max-width: 100%; }
+    .pd-navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pd-nav-btn {
+        max-width: 100%;
+    }
 }
 
 /* Sidebar */
@@ -245,6 +270,7 @@
     padding: 0;
     margin: 0 0 20px;
 }
+
 .pd-sidebar-meta li {
     display: flex;
     justify-content: space-between;
@@ -252,12 +278,15 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 0.9rem;
 }
+
 .pd-sidebar-meta li:last-child {
     border-bottom: none;
 }
+
 .pd-sidebar-meta span {
     color: var(--text-muted);
 }
+
 .pd-sidebar-meta strong {
     color: var(--text-light);
     font-weight: 500;
@@ -277,6 +306,7 @@
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .pd-btn-solid:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
@@ -293,6 +323,7 @@
     padding: 0;
     margin: 0;
 }
+
 .pd-features-list li {
     position: relative;
     padding-left: 20px;
@@ -301,6 +332,7 @@
     color: var(--text-muted);
     line-height: 1.5;
 }
+
 .pd-features-list li::before {
     content: '';
     position: absolute;
@@ -319,22 +351,26 @@
     padding: 30px 25px;
     text-align: center;
 }
+
 .pd-sidebar-cta .cta-icon {
     font-size: 2.5rem;
     color: var(--text-muted);
     margin-bottom: 15px;
 }
+
 .pd-sidebar-cta h3 {
     font-size: 1.2rem;
     color: var(--text-light);
     margin-bottom: 10px;
 }
+
 .pd-sidebar-cta p {
     font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 20px;
     line-height: 1.5;
 }
+
 .pd-btn-outline {
     display: inline-block;
     width: 100%;
@@ -346,6 +382,7 @@
     font-size: 0.9rem;
     transition: all 0.3s;
 }
+
 .pd-btn-outline:hover {
     background: var(--accent-1);
     color: #fff;

@@ -251,12 +251,6 @@
     document.getElementById('pd-title').textContent = project.title;
     document.getElementById('pd-subtitle').textContent = project.shortDesc;
 
-    // Set Hero Background dynamically
-    const heroBg = document.querySelector('.pd-hero-bg');
-    if (heroBg && project.images && project.images.length > 0) {
-        heroBg.style.backgroundImage = `url('${project.images[0]}')`;
-    }
-
     document.getElementById('pd-main-title').textContent = project.title;
     document.getElementById('pd-meta-cat').innerHTML = `<i class="fa-solid fa-tag"></i> ${project.category}`;
     document.getElementById('pd-meta-duration').innerHTML = `<i class="fa-regular fa-clock"></i> ${project.timeline}`;
