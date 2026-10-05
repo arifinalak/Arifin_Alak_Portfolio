@@ -147,6 +147,8 @@ if (typewriterEl) {
         }
     ];
 
+    const _u = (id) => "https://images.unsplash.com/" + id + "?auto=format&fit=crop&w=1000&q=80";
+    const PROCESS_IMGS = [_u("photo-1552664730-d307ca884978"), _u("photo-1531403009284-440f080d1e12"), _u("photo-1561070791-2526d30994b5"), _u("photo-1517694712202-14dd9538aa97"), _u("photo-1516321318423-f06f85e504b3"), _u("photo-1460925895917-afdab827c52f")];
     const timelineSteps = document.querySelectorAll(".timeline-step");
     if (!timelineSteps.length) return;
 
@@ -195,10 +197,11 @@ if (typewriterEl) {
             if (elVDesc) elVDesc.textContent = data.desc;
 
             if (elBg) {
-                elBg.style.background = data.bg;
+                elBg.style.background = "linear-gradient(180deg, rgba(7,6,13,0.25), rgba(7,6,13,0.85)), url(" + PROCESS_IMGS[idx] + ") center/cover no-repeat"; elBg.classList.remove("he-swap"); void elBg.offsetWidth; elBg.classList.add("he-swap");
             }
         });
     });
+    timelineSteps[0].click();
 })();
 
 // Featured Projects Carousel
