@@ -29,10 +29,14 @@
         {
             t: 'MAZZY – E-Commerce Website', c: 'Web Development', y: 2025, h: 220, i: 'fa-cart-shopping', url: 'project-details.html?id=6',
             d: 'A modern and responsive e-commerce website designed to provide a smooth and engaging online shopping experience featuring a clean UI, secure checkout, and product management.', tech: ['Web Development', 'E-commerce', 'UI/UX']
+        },
+        {
+            t: 'Rupgao Resort — A Knowledge Exchange Centre', c: 'Full Stack', y: 2026, h: 270, i: 'fa-hotel', url: 'project-details.html?id=7',
+            d: 'A complete full-stack web application for a resort and knowledge exchange centre with a dynamic frontend, REST API backend, PostgreSQL database and an admin panel.', tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL']
         }
     ];
 
-    const IMGS = ['photo-1518770660439-4636190af475','photo-1600132806370-bf17e65e942f','photo-1560518883-ce09059eeffa','photo-1434030216411-0b793f4b4173','photo-1566576721346-d4a3b4eaeb55','photo-1553413077-190dd305871c','photo-1556742049-0cfed4f6a45d'];
+    const IMGS = ['photo-1518770660439-4636190af475','photo-1600132806370-bf17e65e942f','photo-1560518883-ce09059eeffa','photo-1434030216411-0b793f4b4173','photo-1566576721346-d4a3b4eaeb55','photo-1553413077-190dd305871c','photo-1556742049-0cfed4f6a45d','photo-1566073771259-6a8506099945'];
     projects.forEach((p, i) => p.img = 'https://images.unsplash.com/' + IMGS[i] + '?auto=format&fit=crop&w=800&q=75');
 
     const $ = (s, r = document) => r.querySelector(s);

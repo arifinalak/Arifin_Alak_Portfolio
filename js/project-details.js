@@ -182,6 +182,33 @@
                 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=600&q=80',
                 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80'
             ]
+        },
+        {
+            title: 'Rupgao Resort - A Knowledge Exchange Centre',
+            category: 'Full Stack',
+            date: '2026',
+            timeline: 'Ongoing',
+            role: 'Full Stack Developer',
+            liveUrl: 'https://github.com/arifinalak/Rupgao',
+            shortDesc: 'A complete full-stack web application for a resort and knowledge exchange centre.',
+            intro: 'Rupgao Resort is a complete web application for a knowledge exchange centre, combining a polished public-facing website with a Node.js backend, a PostgreSQL database and an admin panel.',
+            overview: 'The project is organised into a clear frontend and backend structure. Visitors can explore the resort, its packages and events and send bookings or enquiries, while administrators log in to manage the content through a secured admin area backed by REST API endpoints.',
+            challenges: 'Designing a relational PostgreSQL schema for packages, bookings, events and content, wiring it to a clean REST API, and keeping the frontend working both standalone (frontend-only mode) and with the full backend were the main challenges.',
+            results: 'Delivered a full-stack system with an easy quick-start for frontend-only use and a documented backend setup, database tables, admin login, a consistent design theme and a well-defined API.',
+            tech: ['HTML/CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL', 'REST API'],
+            features: [
+                'Frontend-only quick start and full backend setup',
+                'Node.js + PostgreSQL backend with REST API endpoints',
+                'Structured database tables for resort content and bookings',
+                'Admin login and management panel',
+                'Consistent custom design theme',
+                'Responsive, modern user interface'
+            ],
+            images: [
+                'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80'
+            ]
         }
     ];
 
