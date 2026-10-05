@@ -2,14 +2,16 @@
 .pd-hero-bg {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 450px;
     background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px 40px;
+    padding: 100px 20px 60px;
     margin-top: 70px;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    margin-bottom: 20px;
 }
 
 .pd-overlay {
