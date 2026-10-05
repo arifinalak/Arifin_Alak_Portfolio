@@ -27,7 +27,7 @@ if (hamburger && mainNav) {
 // Typewriter effect
 const typewriterEl = document.getElementById("typewriter");
 if (typewriterEl) {
-    const words = ["Web Developer", "AI Enthusiast", "Problem Solver", "Backend Engineer", "Creative Designer"];
+    const words = ["Full-Stack Software Developer", "AI Engineer", "AI & Machine Learning Enthusiast", "AI Agent Builder", "Software & Automation Developer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
