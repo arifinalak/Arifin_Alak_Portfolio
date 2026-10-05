@@ -1348,17 +1348,23 @@ nav a:hover {
 
 /* ── About Home Section ───────────────────────── */
 .about-home {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 0;
     padding: 100px 6%;
     align-items: start;
     background: transparent;
 }
 
+.about-home-left {
+    display: contents;
+}
+
 /* LEFT */
 .about-home-badge {
+    grid-column: 1 / 2;
+    grid-row: 1;
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #e2e8f0;
@@ -1367,9 +1373,13 @@ nav a:hover {
     padding: 6px 16px;
     border-radius: 999px;
     margin-bottom: 20px;
+    align-self: start;
+    justify-self: start;
 }
 
 .about-home-heading {
+    grid-column: 1 / 2;
+    grid-row: 2;
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 800;
     color: #ffffff;
@@ -1382,6 +1392,8 @@ nav a:hover {
 }
 
 .about-home-bottom {
+    grid-column: 1 / 2;
+    grid-row: 3;
     display: flex;
     gap: 16px;
     align-items: flex-start;
@@ -1440,7 +1452,9 @@ nav a:hover {
 
 /* RIGHT */
 .about-home-right {
-    padding-top: 12px;
+    grid-column: 2 / 3;
+    grid-row: 3;
+    padding-top: 0;
 }
 
 .about-home-bio {
@@ -1551,6 +1565,11 @@ nav a:hover {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 70px 5%;
+    }
+    
+    .about-home-badge, .about-home-heading, .about-home-bottom, .about-home-right {
+        grid-column: 1 / 2;
+        grid-row: auto;
     }
 
     .about-features {
