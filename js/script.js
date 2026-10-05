@@ -204,66 +204,72 @@ if (typewriterEl) {
     timelineSteps[0].click();
 })();
 
-// Featured Projects Carousel
+// Featured Projects Carousel (transform-based slider)
 (function () {
     const track = document.getElementById("fp-track");
     const prevBtn = document.getElementById("fp-prev");
     const nextBtn = document.getElementById("fp-next");
     const dotsContainer = document.getElementById("fp-dots");
-
     if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
 
+    const wrapper = track.parentElement;
     const cards = Array.from(track.querySelectorAll(".fp-card"));
-    if (cards.length === 0) return;
+    if (!cards.length) return;
 
-    // Create dots based on number of cards
-    cards.forEach((_, idx) => {
-        const dot = document.createElement("span");
-        dot.classList.add("fp-dot");
-        if (idx === 0) dot.classList.add("active");
+    let index = 0, timer = null;
+    const GAP = 24;
 
-        dot.addEventListener("click", () => {
-            const cardWidth = cards[0].offsetWidth + 24; // 24px is gap
-            track.scrollTo({
-                left: idx * cardWidth,
-                behavior: "smooth"
-            });
-        });
+    const perView = () => (window.innerWidth <= 700 ? 1 : window.innerWidth <= 1100 ? 2 : 3);
+    const maxIndex = () => Math.max(0, cards.length - perView());
 
-        dotsContainer.appendChild(dot);
+    function layout() {
+        const pv = perView();
+        const w = (wrapper.clientWidth - GAP * (pv - 1)) / pv;
+        cards.forEach(c => { c.style.flex = "0 0 " + w + "px"; c.style.width = w + "px"; });
+        buildDots();
+        go(Math.min(index, maxIndex()), false);
+    }
+
+    function buildDots() {
+        dotsContainer.innerHTML = "";
+        for (let i = 0; i <= maxIndex(); i++) {
+            const d = document.createElement("span");
+            d.className = "fp-dot";
+            d.addEventListener("click", () => { go(i); restart(); });
+            dotsContainer.appendChild(d);
+        }
+    }
+
+    function go(i, animate = true) {
+        index = Math.max(0, Math.min(i, maxIndex()));
+        const step = cards[0].offsetWidth + GAP;
+        track.style.transition = animate ? "transform .7s cubic-bezier(.22,.8,.2,1)" : "none";
+        track.style.transform = "translateX(" + (-index * step) + "px)";
+        Array.from(dotsContainer.children).forEach((d, k) => d.classList.toggle("active", k === index));
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === maxIndex();
+    }
+
+    const next = () => go(index >= maxIndex() ? 0 : index + 1);
+    const prev = () => go(index <= 0 ? maxIndex() : index - 1);
+    function restart() { clearInterval(timer); timer = setInterval(next, 5000); }
+
+    nextBtn.addEventListener("click", () => { go(index + 1); restart(); });
+    prevBtn.addEventListener("click", () => { go(index - 1); restart(); });
+    wrapper.addEventListener("mouseenter", () => clearInterval(timer));
+    wrapper.addEventListener("mouseleave", restart);
+
+    // touch / mouse swipe
+    let startX = null, moved = false;
+    wrapper.addEventListener("pointerdown", e => { startX = e.clientX; moved = false; });
+    wrapper.addEventListener("pointerup", e => {
+        if (startX === null) return;
+        const dx = e.clientX - startX; startX = null;
+        if (Math.abs(dx) > 50) { moved = true; dx < 0 ? go(index + 1) : go(index - 1); restart(); }
     });
+    wrapper.addEventListener("click", e => { if (moved) { e.preventDefault(); moved = false; } }, true);
 
-    const dots = Array.from(dotsContainer.querySelectorAll(".fp-dot"));
-
-    // Scroll by 1 card width
-    const scrollAmount = () => cards[0].offsetWidth + 24;
-
-    nextBtn.addEventListener("click", () => {
-        track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
-    });
-
-    prevBtn.addEventListener("click", () => {
-        track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
-    });
-
-    // Update active dot on scroll
-    track.addEventListener("scroll", () => {
-        const scrollLeft = track.scrollLeft;
-        const cardWidth = scrollAmount();
-
-        // Calculate which card is currently closest to the left edge
-        let currentIndex = Math.round(scrollLeft / cardWidth);
-
-        // Bounds checking
-        if (currentIndex < 0) currentIndex = 0;
-        if (currentIndex >= dots.length) currentIndex = dots.length - 1;
-
-        dots.forEach((dot, idx) => {
-            if (idx === currentIndex) {
-                dot.classList.add("active");
-            } else {
-                dot.classList.remove("active");
-            }
-        });
-    });
+    let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(layout, 120); });
+    window.addEventListener("load", layout);
+    layout(); restart();
 })();

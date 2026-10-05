@@ -77,3 +77,25 @@
 @media(max-width:980px){.he-services,.he-topics{grid-template-columns:repeat(2,1fr)!important}.he-chip.c1{left:0}.he-chip.c2{right:0}}
 @media(max-width:640px){.he-services,.he-topics{grid-template-columns:1fr!important}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}[data-he]{opacity:1;transform:none}}
+
+/* ===== Featured projects slider fixes ===== */
+.featured-projects{padding:100px 6%}
+.fp-container{max-width:1240px;margin:0 auto}
+.fp-carousel-wrapper{margin:0!important;padding:14px 0 10px!important;overflow:hidden!important;scroll-snap-type:none!important}
+.fp-carousel-track{display:flex;gap:24px;padding-bottom:0!important;will-change:transform;touch-action:pan-y;user-select:none}
+.fp-card{min-width:0;height:auto}
+.fp-card-image{background-size:cover!important;background-position:center!important;flex-shrink:0}
+.fp-card-content{min-width:0}
+.fp-card-title{font-size:1.25rem;line-height:1.25}
+.fp-title-row{gap:12px}
+.fp-arrow-btn{flex-shrink:0}
+.fp-view-btn{box-sizing:border-box;margin-top:auto!important;gap:10px}
+.fp-view-btn:hover{background:linear-gradient(90deg,#a855f7,#6366f1)!important;color:#fff}
+.fp-view-btn i,.fp-arrow-btn i{transition:transform .3s}
+.fp-view-btn:hover i,.fp-arrow-btn:hover i{transform:rotate(0deg)!important}
+.fp-card-desc{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.fp-btn{transition:all .3s}
+.fp-btn:hover:not(:disabled){background:linear-gradient(135deg,#a855f7,#6366f1);border-color:transparent;transform:scale(1.08)}
+.fp-btn:disabled{opacity:.35;cursor:not-allowed}
+.fp-dot{cursor:pointer}
+@media(max-width:700px){.fp-top-bar{flex-direction:column;align-items:flex-start;gap:20px}}
