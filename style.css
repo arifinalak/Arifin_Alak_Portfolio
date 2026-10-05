@@ -1428,7 +1428,6 @@ nav a:hover {
     background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 50%, #1e1b4b 100%);
     border: 1px solid rgba(123, 47, 247, 0.3);
     aspect-ratio: 3/4;
-    max-height: 280px;
 }
 
 .about-home-photo img {
