@@ -40,8 +40,18 @@
         }
     ];
 
-    const IMGS = ['photo-1625246333195-78d9c38ad449','photo-1566073771259-6a8506099945','photo-1518770660439-4636190af475','photo-1600132806370-bf17e65e942f','photo-1560518883-ce09059eeffa','photo-1434030216411-0b793f4b4173','photo-1566576721346-d4a3b4eaeb55','photo-1553413077-190dd305871c','photo-1556742049-0cfed4f6a45d'];
-    projects.forEach((p, i) => p.img = 'https://images.unsplash.com/' + IMGS[i] + '?auto=format&fit=crop&w=800&q=75');
+    const IMGS = [
+        'Banner/agroscan-banner.png',
+        'Banner/rupgao-banner.png',
+        'Banner/Bangladesh Flood Early Warning AI Agent.jpg',
+        'Banner/Terra Luxe.jpg',
+        'Banner/EstateFlow.jpg',
+        'Banner/IELTS Master.jpg',
+        'Banner/E-Commerce Shipment Delay Prediction.jpg',
+        'Banner/The Ultimate INVENTORY.jpg',
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=75'
+    ];
+    projects.forEach((p, i) => p.img = IMGS[i]);
 
     const $ = (s, r = document) => r.querySelector(s);
     const grid = $('#pf-grid'), catsEl = $('#pf-cats'), chipsEl = $('#pf-chips');

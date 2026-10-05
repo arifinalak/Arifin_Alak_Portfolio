@@ -22,9 +22,7 @@
                 'Clear architecture: capture, model, prediction, result'
             ],
             images: [
-                'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80'
+                'Banner/agroscan-banner.png'
             ]
         },
         {
@@ -49,9 +47,7 @@
                 'Responsive, modern user interface'
             ],
             images: [
-                'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80'
+                'Banner/rupgao-banner.png'
             ]
         },
 
@@ -76,9 +72,7 @@
                 'Live interactive map dashboard (Leaflet.js)'
             ],
             images: [
-                'https://images.unsplash.com/photo-1547683905-f30e618a1fbf?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
+                'Banner/Bangladesh Flood Early Warning AI Agent.jpg'
             ]
         },
         {
@@ -102,9 +96,7 @@
                 'Interactive mini-game integration'
             ],
             images: [
-                'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80'
+                'Banner/Terra Luxe.jpg'
             ]
         },
         {
@@ -128,9 +120,7 @@
                 'Secure user authentication'
             ],
             images: [
-                'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80'
+                'Banner/EstateFlow.jpg'
             ]
         },
         {
@@ -154,9 +144,7 @@
                 'Timed mock tests and vocabulary builder'
             ],
             images: [
-                'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80'
+                'Banner/IELTS Master.jpg'
             ]
         },
         {
@@ -180,9 +168,7 @@
                 'Business insight generation from feature importance'
             ],
             images: [
-                'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=600&q=80'
+                'Banner/E-Commerce Shipment Delay Prediction.jpg'
             ]
         },
         {
@@ -206,9 +192,7 @@
                 'Responsive UI tailored for industry workflows'
             ],
             images: [
-                'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1507925922837-326f12d9348d?auto=format&fit=crop&w=600&q=80'
+                'Banner/The Ultimate INVENTORY.jpg'
             ]
         },
         {
@@ -232,9 +216,7 @@
                 'SEO optimization for higher visibility'
             ],
             images: [
-                'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80'
+                'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=75'
             ]
         }
     ];
