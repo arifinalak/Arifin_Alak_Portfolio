@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Ideas | Arifin Alak</title>
+    <meta name="description" content="AI and Machine Learning research, interests and ideas by Arifin Alak.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="research.css">
+</head>
+
+<body class="rs-body">
+    <canvas id="rs-net" aria-hidden="true"></canvas>
+    <div class="rs-progress" id="rs-progress"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">ARIFIN <span style="color: var(--accent-1);">ALAK</span></span>
+                        <span class="nav-brand-tagline">DEVELOP / CREATE / INNOVATE</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn mobile-hire-btn">Hire Me</a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://www.fiverr.com/arifinalak" target="_blank" class="hire-me-btn">Hire Me</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="rs-hero">
+        <div class="rs-hero-in">
+            <span class="rs-chip"><i class="fa-solid fa-flask"></i> Research &amp; Ideas</span>
+            <h1>Teaching machines to <span class="rs-grad" id="rs-type"></span><span class="rs-caret">|</span></h1>
+            <p>My working notebook on Artificial Intelligence and Machine Learning: the questions I'm curious about, what I'm studying, and what I'm building to find answers.</p>
+            <div class="rs-hero-cta">
+                <a href="#work" class="rs-btn solid">Explore Research <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#interests" class="rs-btn ghost">My Interests</a>
+            </div>
+        </div>
+        <div class="rs-hero-viz" aria-hidden="true">
+            <div class="rs-chip-card">
+                <div class="rs-chip-head"><span></span><span></span><span></span><small>training.log</small></div>
+                <pre id="rs-log"></pre>
+            </div>
+            <svg class="rs-loss" viewBox="0 0 300 120">
+                <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#a855f7" /><stop offset="1" stop-color="#22d3ee" /></linearGradient></defs>
+                <path class="grid" d="M0 30H300M0 60H300M0 90H300" />
+                <path id="rs-loss-path" d="M0 12 C 30 20, 45 60, 80 72 S 150 95, 200 102 S 270 108, 300 109" stroke="url(#lg)" />
+            </svg>
+            <small class="rs-loss-label">loss ↓ epoch →</small>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="rs-stats rs-reveal">
+        <div><b data-to="4">0</b><span>Research Areas</span></div>
+        <div><b data-to="8">0</b><span>AI / ML Projects</span></div>
+        <div><b data-to="12">0</b><span>Models Trained</span></div>
+        <div><b data-to="100" data-suf="%">0</b><span>Curiosity</span></div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="rs-sec" id="interests">
+        <div class="rs-head rs-reveal">
+            <span class="rs-chip small">What drives me</span>
+            <h2>Research <span class="rs-grad">Interests</span></h2>
+            <p>The areas of AI/ML I'm exploring and want to go deeper into.</p>
+        </div>
+        <div class="rs-grid">
+            <article class="rs-card rs-reveal">
+                <div class="rs-img"><img loading="lazy" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Artificial intelligence"></div>
+                <div class="rs-card-in"><span class="rs-ico"><i class="fa-solid fa-brain"></i></span>
+                    <h3>Deep Learning</h3>
+                    <p>Neural networks for vision and prediction: architectures, training dynamics and making models generalise.</p></div>
+            </article>
+            <article class="rs-card rs-reveal">
+                <div class="rs-img"><img loading="lazy" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" alt="AI agents"></div>
+                <div class="rs-card-in"><span class="rs-ico"><i class="fa-solid fa-robot"></i></span>
+                    <h3>LLMs &amp; AI Agents</h3>
+                    <p>Autonomous agents, prompt engineering and trustworthy LLM workflows that take real-world actions safely.</p></div>
+            </article>
+            <article class="rs-card rs-reveal">
+                <div class="rs-img"><img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data analytics"></div>
+                <div class="rs-card-in"><span class="rs-ico"><i class="fa-solid fa-chart-line"></i></span>
+                    <h3>Predictive Modelling</h3>
+                    <p>Classical ML, feature engineering and evaluation that turn messy business data into actionable insight.</p></div>
+            </article>
+            <article class="rs-card rs-reveal">
+                <div class="rs-img"><img loading="lazy" src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=900&q=80" alt="AI for agriculture"></div>
+                <div class="rs-card-in"><span class="rs-ico"><i class="fa-solid fa-seedling"></i></span>
+                    <h3>AI for Good</h3>
+                    <p>Applying ML to climate, disaster early warning and agriculture, problems that matter to communities.</p></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- RESEARCH WORK -->
+    <section class="rs-sec" id="work">
+        <div class="rs-head rs-reveal">
+            <span class="rs-chip small">Output</span>
+            <h2>Research &amp; <span class="rs-grad">Work</span></h2>
+            <p>Papers, experiments and builds. Filter by topic.</p>
+        </div>
+        <div class="rs-filters rs-reveal" id="rs-filters"></div>
+        <div class="rs-list" id="rs-list"></div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section class="rs-sec">
+        <div class="rs-head rs-reveal">
+            <span class="rs-chip small">Toolkit</span>
+            <h2>The <span class="rs-grad">Stack</span> I Research With</h2>
+        </div>
+        <div class="rs-skills rs-reveal">
+            <div class="rs-skill"><span>Python</span><i style="--w:92%"></i></div>
+            <div class="rs-skill"><span>Scikit-learn / Pandas / NumPy</span><i style="--w:88%"></i></div>
+            <div class="rs-skill"><span>Neural Networks</span><i style="--w:75%"></i></div>
+            <div class="rs-skill"><span>LLM APIs &amp; Prompt Engineering</span><i style="--w:85%"></i></div>
+            <div class="rs-skill"><span>Data Visualisation</span><i style="--w:80%"></i></div>
+        </div>
+    </section>
+
+    <!-- NOW / IDEAS -->
+    <section class="rs-sec">
+        <div class="rs-head rs-reveal">
+            <span class="rs-chip small">Notebook</span>
+            <h2>Ideas &amp; <span class="rs-grad">Currently Exploring</span></h2>
+        </div>
+        <div class="rs-timeline">
+            <div class="rs-t-item rs-reveal"><span class="dot"></span><div><small>Now</small><h4>Trustworthy AI workflows</h4><p>How can an agent explain and justify an automated decision so people can verify it?</p></div></div>
+            <div class="rs-t-item rs-reveal"><span class="dot"></span><div><small>Next</small><h4>Lightweight on-device models</h4><p>Compressing vision models so crop-disease detection works offline on low-end phones.</p></div></div>
+            <div class="rs-t-item rs-reveal"><span class="dot"></span><div><small>Idea</small><h4>Early-warning systems with LLM reasoning</h4><p>Combining sensor data, forecasting models and language models to issue clearer local alerts.</p></div></div>
+            <div class="rs-t-item rs-reveal"><span class="dot"></span><div><small>Reading</small><h4>Papers on generalisation &amp; evaluation</h4><p>Why models fail outside the lab, and how to test for it honestly.</p></div></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="rs-cta rs-reveal">
+        <h2>Let's collaborate on AI research</h2>
+        <p>Have a dataset, a question or an idea? I'd love to talk.</p>
+        <a class="rs-btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSdO59KS2FkeB6CDlVoBrFqivbtxR3UzDHF6E8eAf1m6Abv9Ew/viewform?usp=publish-editor" target="_blank">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayed Arifin Ahmed Alak</h3>
+                <p class="tagline">Code Meets Creativity.</p>
+                <p class="about-text">Crafted with passion by Arifin, blending clean code, bold visuals, and strategic design to build identities that stand out. Every pixel has a purpose.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="portfolio.html">My Works</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li><a href="mailto:arifinalak198@email.com">arifinalak198@email.com</a></li>
+                    <li><a href="tel:+8801746556708">+880 1746 556 708</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 Arifin Alak. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/research.js"></script>
+</body>
+
+</html>
